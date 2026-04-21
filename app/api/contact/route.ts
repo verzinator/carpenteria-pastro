@@ -4,6 +4,17 @@ import nodemailer from 'nodemailer'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;')
+}
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
 async function sendWithResend(to: string, subject: string, html: string) {
   try {
     const result = await resend.emails.send({
@@ -61,7 +72,14 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    if (!privacyRequired || !privacyMarketing) {
+    if (!emailRegex.test(email.trim())) {
+      return NextResponse.json(
+        { success: false, message: 'Indirizzo email non valido' },
+        { status: 400 }
+      )
+    }
+
+    if (privacyRequired !== true || privacyMarketing !== true) {
       return NextResponse.json(
         { success: false, message: 'È necessario accettare entrambi i consensi privacy' },
         { status: 400 }
@@ -77,16 +95,21 @@ export async function POST(req: NextRequest) {
       )
     }
 
+    const safeName = escapeHtml(nome.trim())
+    const safeEmail = escapeHtml(email.trim())
+    const safeTelefono = telefono ? escapeHtml(telefono.trim()) : 'Non fornito'
+    const safeMessaggio = escapeHtml(messaggio.trim())
+
     // HTML email template
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #1b4f8a;">Nuova richiesta di contatto</h2>
-        <p><strong>Nome:</strong> ${nome}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Telefono:</strong> ${telefono || 'Non fornito'}</p>
+        <p><strong>Nome:</strong> ${safeName}</p>
+        <p><strong>Email:</strong> ${safeEmail}</p>
+        <p><strong>Telefono:</strong> ${safeTelefono}</p>
         <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;" />
         <h3>Messaggio:</h3>
-        <p style="white-space: pre-wrap;">${messaggio}</p>
+        <p style="white-space: pre-wrap;">${safeMessaggio}</p>
         <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;" />
         <p style="font-size: 12px; color: #666;">
           Consenso marketing: ${privacyMarketing ? 'Sì' : 'No'}
@@ -106,7 +129,7 @@ export async function POST(req: NextRequest) {
       const clientConfirmationHtml = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #1b4f8a;">Richiesta acquisita</h2>
-          <p>Ciao ${nome},</p>
+          <p>Ciao ${safeName},</p>
           <p>Abbiamo ricevuto la tua richiesta di contatto. Un nostro referente ti contatterà al più presto per discutere del tuo progetto.</p>
           <p>Se hai altre domande o necessiti urgenti, non esitare a contattarci direttamente.</p>
           <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;" />
