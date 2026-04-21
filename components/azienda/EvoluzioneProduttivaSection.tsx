@@ -1,0 +1,82 @@
+'use client'
+
+import { Hammer, SlidersHorizontal, Bot, Cpu } from 'lucide-react'
+
+const quadrants = [
+  { icon: Hammer, label: 'Artisan', sub: 'Forgiatura Tradizionale' },
+  { icon: SlidersHorizontal, label: 'Automated', sub: 'Sistemi CNC' },
+  { icon: Bot, label: 'Robotic', sub: 'Saldatura Cobot' },
+  { icon: Cpu, label: 'Digital', sub: 'Industria 4.0' },
+]
+
+export default function EvoluzioneProduttivaSection() {
+  return (
+    <section
+      className="blueprint-grid"
+      style={{ backgroundColor: 'var(--color-surface)', paddingTop: 'var(--space-32)', paddingBottom: 'var(--space-32)' }}
+    >
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          {/* 2×2 grid */}
+          <div className="grid grid-cols-2 gap-4 order-2 lg:order-1">
+            {quadrants.map(({ icon: Icon, label, sub }) => (
+              <div
+                key={label}
+                className="aspect-square flex flex-col items-center justify-center text-center group transition-colors duration-300"
+                style={{ backgroundColor: 'var(--color-surface-3)', padding: 'var(--space-8)' }}
+                onMouseEnter={(e) => {
+                  ;(e.currentTarget as HTMLElement).style.backgroundColor = 'var(--color-surface-2)'
+                }}
+                onMouseLeave={(e) => {
+                  ;(e.currentTarget as HTMLElement).style.backgroundColor = 'var(--color-surface-3)'
+                }}
+              >
+                <Icon
+                  size={36}
+                  className="mb-4 transition-transform duration-300 group-hover:scale-110"
+                  style={{ color: 'var(--color-primary-light)' }}
+                />
+                <span
+                  className="font-display font-bold block mb-1"
+                  style={{ fontSize: '22px', color: 'var(--color-text)', letterSpacing: '-0.01em' }}
+                >
+                  {label}
+                </span>
+                <span
+                  className="font-body uppercase"
+                  style={{ fontSize: '10px', color: 'var(--color-text-muted)', letterSpacing: '0.1em' }}
+                >
+                  {sub}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* Text */}
+          <div className="order-1 lg:order-2">
+            <span
+              className="font-body font-medium uppercase block mb-4"
+              style={{ fontSize: '12px', letterSpacing: '0.15em', color: 'var(--color-primary-light)' }}
+            >
+              Tecnologia
+            </span>
+            <h2
+              className="font-display mb-3"
+              style={{ fontSize: 'clamp(32px, 4vw, 51px)', fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em' }}
+            >
+              Evoluzione Produttiva
+            </h2>
+            <p
+              className="font-body leading-relaxed"
+              style={{ fontSize: 'clamp(15px, 1vw, 17px)', color: 'var(--color-accent-silver)', fontWeight: 300 }}
+            >
+              In trent'anni abbiamo trasformato il reparto produttivo:
+              dalla lavorazione manuale ai sistemi CNC,
+              fino alla saldatura robotizzata e ai flussi digitali integrati.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

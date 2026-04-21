@@ -1,0 +1,200 @@
+{
+  "node_modules/@sanity/client/dist/index.browser.js -> ./_chunks-es/stegaEncodeSourceMap.js": {
+    "id": "node_modules/@sanity/client/dist/index.browser.js -> ./_chunks-es/stegaEncodeSourceMap.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_client_dist__chunks-es_stegaEncodeSourceMap_js.js"
+    ]
+  },
+  "node_modules/@sanity/client/dist/index.browser.js -> @sanity/eventsource": {
+    "id": "node_modules/@sanity/client/dist/index.browser.js -> @sanity/eventsource",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_eventsource_browser_js.js"
+    ]
+  },
+  "node_modules/@sanity/next-loader/dist/client-components/live-stream.js -> ../_chunks-es/SanityLiveStream.js": {
+    "id": "node_modules/@sanity/next-loader/dist/client-components/live-stream.js -> ../_chunks-es/SanityLiveStream.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_next-loader_dist__chunks-es_SanityLiveStream_js.js"
+    ]
+  },
+  "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/PresentationComlink.js": {
+    "id": "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/PresentationComlink.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_next-loader_dist__chunks-es_PresentationComlink_js.js"
+    ]
+  },
+  "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnFocus.js": {
+    "id": "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnFocus.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_next-loader_dist__chunks-es_RefreshOnFocus_js.js"
+    ]
+  },
+  "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnMount.js": {
+    "id": "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnMount.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_next-loader_dist__chunks-es_RefreshOnMount_js.js"
+    ]
+  },
+  "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnReconnect.js": {
+    "id": "node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnReconnect.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_next-loader_dist__chunks-es_RefreshOnReconnect_js.js"
+    ]
+  },
+  "node_modules/@sanity/ui/dist/_chunks-es/_visual-editing.mjs -> ./refractor.mjs": {
+    "id": "node_modules/@sanity/ui/dist/_chunks-es/_visual-editing.mjs -> ./refractor.mjs",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_ui_dist__chunks-es_refractor_mjs.js"
+    ]
+  },
+  "node_modules/next-sanity/dist/studio/client-component.js -> ../_chunks-es/NextStudio.js": {
+    "id": "node_modules/next-sanity/dist/studio/client-component.js -> ../_chunks-es/NextStudio.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_next-sanity_dist__chunks-es_NextStudio_js.js"
+    ]
+  },
+  "node_modules/next-sanity/dist/visual-editing/client-component.js -> ../_chunks-es/VisualEditing.js": {
+    "id": "node_modules/next-sanity/dist/visual-editing/client-component.js -> ../_chunks-es/VisualEditing.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_next-sanity_dist__chunks-es_VisualEditing_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/_chunks-es/StructureToolProvider.js -> ./resources7.js": {
+    "id": "node_modules/sanity/lib/_chunks-es/StructureToolProvider.js -> ./resources7.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources7_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./index2.js": {
+    "id": "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./index2.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_index2_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./index3.js": {
+    "id": "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./index3.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_index3_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./index4.js": {
+    "id": "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./index4.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_index4_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./pane.js": {
+    "id": "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./pane.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_pane_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./pane2.js": {
+    "id": "node_modules/sanity/lib/_chunks-es/structureTool.js -> ./pane2.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_pane2_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/VideoPlayer.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/VideoPlayer.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_VideoPlayer_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/ViteDevServerStopped.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/ViteDevServerStopped.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_ViteDevServerStopped_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/resources.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/resources.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/resources2.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/resources2.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources2_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/resources3.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/resources3.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources3_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/resources4.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/resources4.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources4_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/resources5.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/resources5.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources5_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> ./_chunks-es/resources6.js": {
+    "id": "node_modules/sanity/lib/index.js -> ./_chunks-es/resources6.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_lib__chunks-es_resources6_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> @sanity/eventsource": {
+    "id": "node_modules/sanity/lib/index.js -> @sanity/eventsource",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_eventsource_browser_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> @sanity/prism-groq": {
+    "id": "node_modules/sanity/lib/index.js -> @sanity/prism-groq",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_prism-groq_groq_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> react-refractor": {
+    "id": "node_modules/sanity/lib/index.js -> react-refractor",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_react-refractor_dist_index_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> refractor/bash": {
+    "id": "node_modules/sanity/lib/index.js -> refractor/bash",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_refractor_lang_bash_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> refractor/javascript": {
+    "id": "node_modules/sanity/lib/index.js -> refractor/javascript",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_refractor_lang_javascript_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> refractor/json": {
+    "id": "node_modules/sanity/lib/index.js -> refractor/json",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_refractor_lang_json_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> refractor/jsx": {
+    "id": "node_modules/sanity/lib/index.js -> refractor/jsx",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_refractor_lang_jsx_js.js"
+    ]
+  },
+  "node_modules/sanity/lib/index.js -> refractor/typescript": {
+    "id": "node_modules/sanity/lib/index.js -> refractor/typescript",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_refractor_lang_typescript_js.js"
+    ]
+  },
+  "node_modules/sanity/node_modules/@sanity/ui/dist/_chunks-es/_visual-editing.mjs -> ./refractor.mjs": {
+    "id": "node_modules/sanity/node_modules/@sanity/ui/dist/_chunks-es/_visual-editing.mjs -> ./refractor.mjs",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_sanity_node_modules_sanity_ui_dist__chunks-es_refractor_mjs.js"
+    ]
+  }
+}
