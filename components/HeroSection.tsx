@@ -18,7 +18,7 @@ export default function HeroSection() {
           className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.45) contrast(1.1)' }}
         >
-          <source src="https://videos.pexels.com/video-files/8100219/8100219-sd_640_360_24fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/3571038/3571038-hd_1920_1080_24fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Gradient overlay */}
