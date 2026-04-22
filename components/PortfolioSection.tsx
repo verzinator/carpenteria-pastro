@@ -4,14 +4,14 @@ import { ArrowRight } from 'lucide-react'
 const row1 = [
   {
     sector: 'Lorem Ipsum',
-    title: 'Lorem ipsum dolor sit amet consectetur',
+    title: 'Lorem Ipsum',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMtOCI3blxtGR3pRsEnvNRSBOgZzMP_7rCDqByID8guySpUJATNRWtt-kLIV2SaXeU0aOnDlzuffz_OkowOkPRdUTBwsTivj1N0G-fMOdcZwfZjn1g82kFQPbbf195BOx-dQJGEVauJcsCXUW6BPL8u6DDzyn97MVMXLL5qPc6S2ZywTzrHED-yFMqu33NdnOXfioUkWwj8T2P3oki-9Yt3ASPZypdFTgESyzTvIV8-fk2xVOtJirwRAj8sNbCLVQiRVwEZU5hyQ',
     alt: 'Struttura metallica per linea produzione robotizzata',
     colClass: 'md:col-span-8',
   },
   {
-    sector: 'Dolor Sit Amet',
-    title: 'Adipiscing elit sed do eiusmod',
+    sector: 'Lorem Ipsum',
+    title: 'Lorem Ipsum',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVXfi5F6ACchgGdf2SA38Qp-R4S6BKzdU0wRKfOOnpmebNiQHdHNe0x6aDMy9wZ7VzLIhtx_gzvErzpa7G0xaar0xfztjk_HI8AhC88AjV44XlAMN3szFmzObr7DXsBRctkoPllZXlEROKweq4VQeQnAXmU0ZicTxQY7tZDwBAULTUfhJJ1sKnHE5BKVDThZr4ZaP5peNh0iyJkl65eBZQLtZQW42Pft6xd2PYEcoqFqUYgjF8_kvF-oAtLSN15g2NFiW6X1Mgug',
     alt: 'Serbatoi in acciaio inox per il settore alimentare',
     colClass: 'md:col-span-4',
@@ -20,15 +20,15 @@ const row1 = [
 
 const row2 = [
   {
-    sector: 'Tempor Incididunt',
-    title: 'Ut labore et dolore magna aliqua',
+    sector: 'Lorem Ipsum',
+    title: 'Lorem Ipsum',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUHT-tzDuf0dH-xfsiMGcTOGi3NK-I_QTZC_dUSoq_ofRiVeR9XVfsX5vzEpDGp6Hr8eZIUeJHecpcW3FXsrCfooSmJbJs5opjhvPhOys4X0iIiI_nwcuUVRhDofkkfmG4KHVLeYhU0sIWDy8OMf4o-XU9n-Y_2fU-XXVqaouKrQcsFE-WtMS_m293vuN5rOgHzlgoobE7UFR_MmdOvIHO7gnOQRxRV-p0M6Z8_s-Fay4lA9YEi1f9CXqhi3-UZIUimRGWarcDbQ',
     alt: 'Facciata microforata in metallo',
     colClass: 'md:col-span-4',
   },
   {
-    sector: 'Ut Enim Ad',
-    title: 'Minim veniam quis nostrud exercitation',
+    sector: 'Lorem Ipsum',
+    title: 'Lorem Ipsum',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAceCXbqO-PZXg_PRwjMWqaHTtDXRx6IcrPO5Cygn33o508lU3Xs7T4r8afeRilzLY0vcrEJkNe4NL6H7SUHz31_w_J0fkxKx1F0KUwC4nBNBE6qHUoI93EbWN5rJztXYINj-0tu2m63kmlZGK700zJLqPe4QeAOMJ50CA3B6AuozmfYFXV_gez2pNqOuc1hegfoh6OxsyP-KOI0xjGhOvU2TzVMoKDmUMymakFMqVpw5IGS3cW9SbgemgfX_dkTCU9h3L-F_XMqA',
     alt: 'Basamento in acciaio per macchinario agricolo',
     colClass: 'md:col-span-8',
@@ -113,7 +113,7 @@ export default function PortfolioSection() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Portfolio Progetti
+              Lorem Ipsum
             </h2>
             <p
               className="font-body"
@@ -124,7 +124,7 @@ export default function PortfolioSection() {
                 maxWidth: '55ch',
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
+              Lorem Ipsum
             </p>
           </div>
           <a
@@ -139,7 +139,7 @@ export default function PortfolioSection() {
               borderRadius: 'var(--radius-sm)',
             }}
           >
-            Vedi tutti i progetti
+            Lorem Ipsum
             <ArrowRight
               size={14}
               className="transition-transform duration-200 group-hover:translate-x-1"
