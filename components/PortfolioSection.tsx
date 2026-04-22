@@ -51,7 +51,7 @@ function ProjectCard({
   return (
     <div
       className={`${colClass} group relative overflow-hidden`}
-      style={{ borderRadius: 'var(--radius-sm)', aspectRatio: '16/9', minHeight: '320px' }}
+      style={{ borderRadius: 'var(--radius-sm)', aspectRatio: '16/9', minHeight: '280px' }}
     >
       <Image
         src={img}
@@ -148,14 +148,14 @@ export default function PortfolioSection() {
         </div>
 
         {/* Row 1: 8 + 4 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4" style={{ height: '420px' }}>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
           {row1.map((p) => (
             <ProjectCard key={p.title} {...p} />
           ))}
         </div>
 
         {/* Row 2: 4 + 8 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4" style={{ height: '360px' }}>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
           {row2.map((p) => (
             <ProjectCard key={p.title} {...p} />
           ))}
