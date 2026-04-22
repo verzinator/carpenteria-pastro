@@ -16,7 +16,8 @@ export default function CTASection() {
             letterSpacing: '-0.02em',
           }}
         >
-          Iniziamo a costruire
+          Iniziamo a{' '}
+          <span style={{ color: 'var(--color-primary-light)' }}>progettare</span>
         </h2>
         <p
           className="font-body mx-auto"
@@ -27,10 +28,11 @@ export default function CTASection() {
             fontWeight: 300,
           }}
         >
-          Hai un progetto complesso? Mettici alla prova. Analizzeremo i tuoi disegni
-          tecnici per fornirti la migliore soluzione produttiva.
+          Hai un progetto da presentarci? Mettici alla prova.
+          <br />
+          Analizzeremo i tuoi disegni tecnici per fornirti la migliore soluzione produttiva.
         </p>
-        <div className="flex flex-col md:flex-row justify-center gap-4 pt-4">
+        <div className="flex justify-center pt-4">
           <a
             href="mailto:info@carpenteriapastro.it"
             className="inline-flex items-center justify-center font-display font-semibold uppercase px-12 transition-all duration-200 hover:opacity-90"
@@ -46,20 +48,6 @@ export default function CTASection() {
             }}
           >
             Contattaci
-          </a>
-          <a
-            href="tel:+390000000000"
-            className="inline-flex items-center justify-center font-display font-semibold uppercase px-12 transition-all duration-200"
-            style={{
-              height: '44px',
-              backgroundColor: 'var(--color-surface-3)',
-              color: 'var(--color-primary-light)',
-              borderRadius: 'var(--radius-sm)',
-              fontSize: '14px',
-              letterSpacing: '0.08em',
-            }}
-          >
-            Chiama i nostri tecnici
           </a>
         </div>
       </div>
