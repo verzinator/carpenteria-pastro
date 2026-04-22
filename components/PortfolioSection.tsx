@@ -100,7 +100,7 @@ export default function PortfolioSection() {
       style={{ backgroundColor: 'var(--color-surface)' }}
       className="py-24 px-6 md:px-12"
     >
-      <div className="max-w-7xl mx-auto space-y-10">
+      <div className="w-full space-y-10">
         {/* Header */}
         <div className="flex flex-col items-center gap-6 mb-8">
           <div className="text-center">
@@ -148,14 +148,14 @@ export default function PortfolioSection() {
         </div>
 
         {/* Row 1: 8 + 4 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:px-0">
           {row1.map((p) => (
             <ProjectCard key={p.title} {...p} />
           ))}
         </div>
 
         {/* Row 2: 4 + 8 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:px-0">
           {row2.map((p) => (
             <ProjectCard key={p.title} {...p} />
           ))}
