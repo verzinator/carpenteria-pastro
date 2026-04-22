@@ -3,7 +3,6 @@ import HeroSection from '@/components/HeroSection'
 import StatsStrip from '@/components/StatsStrip'
 import IntroSection from '@/components/IntroSection'
 import ServicesSection from '@/components/ServicesSection'
-import SettoriSection from '@/components/SettoriSection'
 import WhyPastroSection from '@/components/WhyPastroSection'
 import PortfolioSection from '@/components/PortfolioSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
@@ -19,7 +18,6 @@ export default function Home() {
         <StatsStrip />
         <IntroSection />
         <ServicesSection />
-        <SettoriSection />
         <WhyPastroSection />
         <PortfolioSection />
         <TestimonialsSection />

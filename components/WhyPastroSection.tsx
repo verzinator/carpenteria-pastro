@@ -7,24 +7,24 @@ import { useState } from 'react'
 const reasons = [
   {
     n: '01',
-    title: 'Qualità Certificata ISO',
-    body: 'Processi monitorati e tracciabilità totale di ogni lotto produttivo.',
+    title: 'Lavorazioni di Grandi Dimensioni',
+    body: 'Macchine piegatrici e per il taglio per lamiere, fino a 13 metri di lunghezza lineare.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCBPmWeUItkSRfI--O_g8C4c9cdHrRYRk9h-xWwT8IIWnPhJ8iOKuWcZHJUbI5evviyG3Rqzv_lsbOjnZePxyGwqrGkU7in0dW1geIL-D7S1xEfxqSw8g2g_x9R5WkADjJdMIgXhEAn3Xfka6wcTj9NTzNC0Y1Jzw9XvFYyJXJlm6JYdMT7aQfZgBxlQQ8jXHM1kmENR6YnOcLAJYBMFDOC6C79NLAMZwJWaMJH5mUQy4rIlNSD5MLIjViU_y3CJiHKKMHtyHn_zg',
-    alt: 'Lavorazioni metalliche certificate ISO',
+    alt: 'Lavorazioni metalliche su grandi dimensioni',
   },
   {
     n: '02',
-    title: 'Tecnologia 4.0',
-    body: 'Macchinari a controllo numerico di ultima generazione con integrazione MES per monitoraggio in tempo reale.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADb6OIRuxgzxq_SFNHuAj9-GvN9bAeH1zIQvJMgOC4ggbz5ajgkUa1fdXtC7cweldK2XBiroYw5eJkYjvbEKrgBdhK3MJD4L8bA4pgpPgv9pfFuDaTlkth5lbj7PcPoLPCy77ohoR67CzfWGb_GT3TIOGxe29IwVIwbPRSuJShPsmKlvJ3L_XsMarAy-j2wMnPfIEqhpqyQxkcw5x1lXBwMUTKxUAl1zX_FHT6VKTcHtcMOuXI90QPYfjErHTBdXTB7LCQtTa29g',
-    alt: 'Macchinari CNC industria 4.0',
+    title: 'Flessibilità Produttiva',
+    body: 'Capacità dello staff organizzativo di fornire risposte in tempi estremamente rapidi, 48 ore dall\'ordine.',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMtOCI3blxtGR3pRsEnvNRSBOgZzMP_7rCDqByID8guySpUJATNRWtt-kLIV2SaXeU0aOnDlzuffz_OkowOkPRdUTBwsTivj1N0G-fMOdcZwfZjn1g82kFQPbbf195BOx-dQJGEVauJcsCXUW6BPL8u6DDzyn97MVMXLL5qPc6S2ZywTzrHED-yFMqu33NdnOXfioUkWwj8T2P3oki-9Yt3ASPZypdFTgESyzTvIV8-fk2xVOtJirwRAj8sNbCLVQiRVwEZU5hyQ',
+    alt: 'Produzione flessibile carpenteria metallica',
   },
   {
     n: '03',
-    title: 'Flessibilità Produttiva',
-    body: 'Dal pezzo singolo alla serie. Riattrezzaggio rapido e tempi di set-up ottimizzati per ordini urgenti.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMtOCI3blxtGR3pRsEnvNRSBOgZzMP_7rCDqByID8guySpUJATNRWtt-kLIV2SaXeU0aOnDlzuffz_OkowOkPRdUTBwsTivj1N0G-fMOdcZwfZjn1g82kFQPbbf195BOx-dQJGEVauJcsCXUW6BPL8u6DDzyn97MVMXLL5qPc6S2ZywTzrHED-yFMqu33NdnOXfioUkWwj8T2P3oki-9Yt3ASPZypdFTgESyzTvIV8-fk2xVOtJirwRAj8sNbCLVQiRVwEZU5hyQ',
-    alt: 'Produzione flessibile carpenteria metallica',
+    title: 'Rispetto Tempistiche e Scadenze',
+    body: 'Pianificazione produttiva avanzata e sistema di priorità per garantire la puntualità delle consegne.',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAceCXbqO-PZXg_PRwjMWqaHTtDXRx6IcrPO5Cygn33o508lU3Xs7T4r8afeRilzLY0vcrEJkNe4NL6H7SUHz31_w_J0fkxKx1F0KUwC4nBNBE6qHUoI93EbWN5rJztXYINj-0tu2m63kmlZGK700zJLqPe4QeAOMJ50CA3B6AuozmfYFXV_gez2pNqOuc1hegfoh6OxsyP-KOI0xjGhOvU2TzVMoKDmUMymakFMqVpw5IGS3cW9SbgemgfX_dkTCU9h3L-F_XMqA',
+    alt: 'Consegne puntuali carpenteria',
   },
   {
     n: '04',
@@ -35,10 +35,10 @@ const reasons = [
   },
   {
     n: '05',
-    title: 'Rispetto delle Scadenze',
-    body: 'Pianificazione produttiva avanzata e sistema di priorità per garantire la puntualità delle consegne.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAceCXbqO-PZXg_PRwjMWqaHTtDXRx6IcrPO5Cygn33o508lU3Xs7T4r8afeRilzLY0vcrEJkNe4NL6H7SUHz31_w_J0fkxKx1F0KUwC4nBNBE6qHUoI93EbWN5rJztXYINj-0tu2m63kmlZGK700zJLqPe4QeAOMJ50CA3B6AuozmfYFXV_gez2pNqOuc1hegfoh6OxsyP-KOI0xjGhOvU2TzVMoKDmUMymakFMqVpw5IGS3cW9SbgemgfX_dkTCU9h3L-F_XMqA',
-    alt: 'Consegne puntuali carpenteria',
+    title: 'Esperienza',
+    body: 'Consolidata in oltre 30 anni di attività tramandata in ogni singolo settore di lavorazione.',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADb6OIRuxgzxq_SFNHuAj9-GvN9bAeH1zIQvJMgOC4ggbz5ajgkUa1fdXtC7cweldK2XBiroYw5eJkYjvbEKrgBdhK3MJD4L8bA4pgpPgv9pfFuDaTlkth5lbj7PcPoLPCy77ohoR67CzfWGb_GT3TIOGxe29IwVIwbPRSuJShPsmKlvJ3L_XsMarAy-j2wMnPfIEqhpqyQxkcw5x1lXBwMUTKxUAl1zX_FHT6VKTcHtcMOuXI90QPYfjErHTBdXTB7LCQtTa29g',
+    alt: 'Esperienza storica carpenteria metallica',
   },
 ]
 
