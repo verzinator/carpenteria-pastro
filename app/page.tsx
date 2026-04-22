@@ -1,5 +1,6 @@
 import NavBar from '@/components/NavBar'
 import HeroSection from '@/components/HeroSection'
+import StatsStrip from '@/components/StatsStrip'
 import IntroSection from '@/components/IntroSection'
 import ServicesSection from '@/components/ServicesSection'
 import SettoriSection from '@/components/SettoriSection'
@@ -15,6 +16,7 @@ export default function Home() {
       <NavBar />
       <main>
         <HeroSection />
+        <StatsStrip />
         <IntroSection />
         <ServicesSection />
         <SettoriSection />
