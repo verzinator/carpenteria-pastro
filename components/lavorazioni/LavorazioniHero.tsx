@@ -37,9 +37,9 @@ export default function LavorazioniHero() {
             maxWidth: '900px',
           }}
         >
-          Lavorazioni di{' '}
+          Lavorazioni lamiere di{' '}
           <span style={{ color: 'var(--color-primary-light)' }}>
-            precisione.
+            grandi dimensioni.
           </span>
         </h1>
 
@@ -52,8 +52,8 @@ export default function LavorazioniHero() {
             fontWeight: 300,
           }}
         >
-          Lavorazione strutturale dell&apos;acciaio e componenti su misura.
-          Dal taglio laser alla saldatura certificata, un unico partner tecnico.
+          Lavorazione strutture metalliche su disegno di terzi.
+          Dal progetto all&apos;assemblaggio, un unico partner tecnico.
         </p>
       </div>
     </section>

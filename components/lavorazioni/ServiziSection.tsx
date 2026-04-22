@@ -59,28 +59,6 @@ const servizi = [
     reverse: false,
     highlight: false,
   },
-  {
-    num: '06',
-    slug: 'CESOIATURA',
-    title: 'Cesoiatura',
-    body: 'Taglio di lamiere e piastre piane per pannelli, rivestimenti e serbatoi. Taglio dritto ad alta velocità su grandi formati con bordi netti e deformazione minima del materiale.',
-    specs: 'Cesoie idrauliche, Dimensioni max lamiera: 4000×2000 mm, Spessori: 0,5–15 mm',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUHT-tzDuf0dH-xfsiMGcTOGi3NK-I_QTZC_dUSoq_ofRiVeR9XVfsX5vzEpDGp6Hr8eZIUeJHecpcW3FXsrCfooSmJbJs5opjhvPhOys4X0iIiI_nwcuUVRhDofkkfmG4KHVLeYhU0sIWDy8OMf4o-XU9n-Y_2fU-XXVqaouKrQcsFE-WtMS_m293vuN5rOgHzlgoobE7UFR_MmdOvIHO7gnOQRxRV-p0M6Z8_s-Fay4lA9YEi1f9CXqhi3-UZIUimRGWarcDbQ',
-    alt: 'Cesoiatura lamiere industriali',
-    reverse: true,
-    highlight: false,
-  },
-  {
-    num: '07',
-    slug: 'TRATTAMENTI SUPERFICIALI',
-    title: 'Trattamenti superficiali',
-    body: 'Verniciatura, zincatura e sabbiatura per la protezione da corrosione e usura. Trattamenti applicabili su acciaio al carbonio e strutturale con metodi a polvere epossidica, zincatura a caldo o meccanica.',
-    specs: 'Trattamenti: Verniciatura, Zincatura, Sabbiatura, Materiali: Acciaio al carbonio, Acciaio strutturale, Metodi: Polvere epossidica, Zincatura a caldo/meccanica',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAp7DKHPPvRyujibLD5T7d3U-us_CbMDQGPq810IOzFF_qqfrF6igoqO_XBECYWdjFM6NQf5XVqKu5DezdEYO7Ks8CM7D64HsXnsfRgzXvegQR9m2I8B4_vFMS3rr67mdNZurJha5D-mspgLeeOG-nDygGLGIO5lpRJJ5rdtdHvv-un5muvfMop_ZOq5sBrzlRfUDzfYpHDhNDskL552emYksN01NW2RNOlhvzdHyHagcUCC16aVZaPcElwVQa6V2wXrjnHt8OLkg',
-    alt: 'Trattamenti superficiali acciaio',
-    reverse: false,
-    highlight: false,
-  },
 ]
 
 export default function ServiziSection() {

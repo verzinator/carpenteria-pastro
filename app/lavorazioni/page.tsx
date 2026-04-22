@@ -3,8 +3,6 @@ import Footer from '@/components/Footer'
 import LavorazioniHero from '@/components/lavorazioni/LavorazioniHero'
 import IntroSection from '@/components/lavorazioni/IntroSection'
 import ServiziSection from '@/components/lavorazioni/ServiziSection'
-import ProcessoSection from '@/components/lavorazioni/ProcessoSection'
-import MaterialiSection from '@/components/lavorazioni/MaterialiSection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -21,8 +19,6 @@ export default function LavorazioniPage() {
         <LavorazioniHero />
         <IntroSection />
         <ServiziSection />
-        <ProcessoSection />
-        <MaterialiSection />
       </main>
       <Footer />
     </>
