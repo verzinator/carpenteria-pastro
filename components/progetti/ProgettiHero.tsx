@@ -34,11 +34,11 @@ export default function ProgettiHero() {
             maxWidth: '900px',
           }}
         >
-          Ogni commessa è un{' '}
+          Ogni commessa è una{' '}
           <span style={{ color: 'var(--color-primary-light)' }}>
-            problema tecnico
+            sfida
           </span>{' '}
-          da risolvere.
+          che prendiamo a cuore.
         </h1>
 
         <p
