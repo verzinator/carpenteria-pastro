@@ -1,7 +1,7 @@
 export default function LavorazioniHero() {
   return (
     <section
-      className="relative min-h-[820px] flex items-center overflow-hidden blueprint-grid"
+      className="relative min-h-svh lg:min-h-[820px] flex items-center overflow-hidden blueprint-grid"
       style={{ backgroundColor: 'var(--color-bg)' }}
     >
       {/* Gradient overlay top/bottom */}
