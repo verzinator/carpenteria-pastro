@@ -51,7 +51,7 @@ function ProjectCard({
   return (
     <div
       className={`${colClass} group relative overflow-hidden`}
-      style={{ borderRadius: 'var(--radius-sm)', minHeight: '320px' }}
+      style={{ borderRadius: 'var(--radius-sm)', aspectRatio: '16/9', minHeight: '320px' }}
     >
       <Image
         src={img}
