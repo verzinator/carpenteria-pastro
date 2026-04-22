@@ -7,25 +7,25 @@ const services = [
     icon: Cpu,
     title: 'Taglio Laser',
     description:
-      'Soluzioni di taglio laser ad alta precisione su lamiere e profili metallici fino a 25mm di spessore, con tolleranze di ±0,1mm.',
+      'Soluzioni di taglio laser ad alta precisione su lamiere e profili metallici fino a 40mm di spessore, con tolleranze di ±0,1mm.',
   },
   {
     icon: Ruler,
     title: 'Piegatura',
     description:
-      'Piegatura a freddo su presse piegatrici CNC fino a 13 metri di lunghezza utile. Lavorazioni su acciaio, inox e alluminio.',
+      'Piegatura a freddo su presse piegatrici CNC fino a 13 metri di lunghezza utile.',
   },
   {
     icon: Zap,
     title: 'Saldatura',
     description:
-      'Saldatura MIG/MAG, TIG e robotizzata per giunzioni strutturali certificate EN 1090. Tracciabilità completa di ogni lotto.',
+      '5 postazioni di saldatura a filo, …. (testo completo da aggiornare)',
   },
   {
     icon: Puzzle,
     title: 'Assemblaggio',
     description:
-      'Assemblaggio meccanico completo con fornitura di sotto-gruppi chiavi in mano, dalla progettazione alla consegna.',
+      'Ampi spazi dedicati all\'assemblaggio di lavorazioni complesse e di grandi dimensioni, per garantire una consegna puntale con la massima qualità.',
   },
 ]
 

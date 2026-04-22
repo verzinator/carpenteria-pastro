@@ -24,7 +24,7 @@ export default function IntroSection() {
                 color: 'var(--color-primary-light)',
               }}
             >
-              Company Profile
+              Chi Siamo
             </span>
           </div>
 
@@ -37,7 +37,7 @@ export default function IntroSection() {
               letterSpacing: '-0.02em',
             }}
           >
-            Tecnologia avanzata per la carpenteria metallica pesante e leggera.
+            Tecnologia avanzata per la carpenteria metallica industriale.
           </h2>
 
           <p

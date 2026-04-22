@@ -5,8 +5,8 @@ import { schemaTypes } from './sanity/schema'
 export default defineConfig({
   name: 'carpenteria-pastro',
   title: 'Carpenteria Pastro',
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+  projectId: 'on50ard2',
+  dataset: 'production',
   basePath: '/studio',
   plugins: [structureTool()],
   schema: {

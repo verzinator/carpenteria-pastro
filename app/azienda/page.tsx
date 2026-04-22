@@ -5,7 +5,6 @@ import StoriaSection from '@/components/azienda/StoriaSection'
 import VisioneSection from '@/components/azienda/VisioneSection'
 import EvoluzioneProduttivaSection from '@/components/azienda/EvoluzioneProduttivaSection'
 import PersoneSection from '@/components/azienda/PersoneSection'
-import CertificazioniSection from '@/components/azienda/CertificazioniSection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -24,7 +23,6 @@ export default function AziendaPage() {
         <VisioneSection />
         <EvoluzioneProduttivaSection />
         <PersoneSection />
-        <CertificazioniSection />
       </main>
       <Footer />
     </>

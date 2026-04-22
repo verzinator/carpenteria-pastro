@@ -58,7 +58,7 @@ export default function SettoriSection() {
             className="font-body font-medium uppercase mb-4"
             style={{ fontSize: '12px', letterSpacing: '0.3em', color: 'var(--color-primary-light)' }}
           >
-            Markets & Expertise
+            Settori di Attività
           </div>
           <h2
             className="font-display tracking-tight mb-3"

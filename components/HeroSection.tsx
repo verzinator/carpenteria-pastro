@@ -10,14 +10,17 @@ export default function HeroSection() {
     >
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgs4UwDtWi9n7V2vYOxLJ7p-V5yRM1BzGSEBJ_kqOmzAE2jZm6yYCfwcxqfcRQd1b9xXIFYsIR56c68OSAb29ZVHpjf7nBzA_jnRUfVFPhxMyh58Mqsx70lPCJiMkRwZbbX1x1VisibMD4eD6RWWGo-SlMolX8LlzWNIb3vvvg3HEb8AMd59W2yZNToP75kph9spc32mgYvh-M8nKWaqack0hvA2zA19CcPIzx1uqyy3A_-NSCvDGls2BYtWkzpvgvUXVb7Xk6KQ"
-          alt="Taglio laser su lamiera industriale ad alta precisione"
-          fill
-          priority
-          className="object-cover"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.45) contrast(1.1)' }}
-        />
+        >
+          <source src="https://videos.pexels.com/video-files/8100219/8100219-sd_640_360_24fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {/* Gradient overlay */}
         <div
           className="absolute inset-0"
@@ -57,13 +60,9 @@ export default function HeroSection() {
               letterSpacing: '-0.02em',
             }}
           >
-            Lavorazioni
+            Lavorazioni metalliche
             <br />
-            metalliche
-            <br />
-            <span style={{ color: 'var(--color-primary-light)' }}>di precisione.</span>
-            <br />
-            Su misura.
+            <span style={{ color: 'var(--color-primary-light)' }}>di grandi dimensioni.</span>
           </h1>
 
           {/* CTA buttons */}
@@ -80,10 +79,10 @@ export default function HeroSection() {
                 boxShadow: '0 8px 32px rgba(27,79,138,0.35)',
               }}
             >
-              Richiedi un preventivo
+              Invia Progetto
             </a>
             <a
-              href="#portfolio"
+              href="#servizi"
               className="inline-flex items-center justify-center gap-2 font-display text-xs font-semibold uppercase px-10 py-4 group transition-all duration-200 w-fit"
               style={{
                 backgroundColor: 'rgba(31,34,43,0.8)',
@@ -94,7 +93,7 @@ export default function HeroSection() {
                 letterSpacing: '0.08em',
               }}
             >
-              I nostri lavori
+              Le nostre lavorazioni
               <ArrowRight
                 size={14}
                 className="transition-transform duration-200 group-hover:translate-x-1"
