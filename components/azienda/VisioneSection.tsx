@@ -5,17 +5,17 @@ const pillars = [
   {
     icon: Lightbulb,
     title: 'Innovazione Continua',
-    body: 'Investiamo costantemente nel R&D per anticipare le sfide costruttive di domani.',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.',
   },
   {
     icon: Leaf,
     title: 'Sostenibilità Integrata',
-    body: 'Processi produttivi a basso impatto e riciclo totale degli scarti metallici.',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.',
   },
   {
     icon: Settings2,
     title: 'Precisione Assoluta',
-    body: 'Ogni saldatura, ogni taglio è sottoposto a rigorosi test di qualità metrologica.',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.',
   },
 ]
 
@@ -63,7 +63,7 @@ export default function VisioneSection() {
                 maxWidth: '520px',
               }}
             >
-              Il nostro approccio si fonda su tre principi che guidano ogni decisione produttiva e commerciale.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
             </p>
 
             <div className="space-y-8">

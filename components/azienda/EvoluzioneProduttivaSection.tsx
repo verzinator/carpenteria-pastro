@@ -3,10 +3,10 @@
 import { Hammer, SlidersHorizontal, Bot, Cpu } from 'lucide-react'
 
 const quadrants = [
-  { icon: Hammer, label: 'Artisan', sub: 'Forgiatura Tradizionale' },
-  { icon: SlidersHorizontal, label: 'Automated', sub: 'Sistemi CNC' },
-  { icon: Bot, label: 'Robotic', sub: 'Saldatura Cobot' },
-  { icon: Cpu, label: 'Digital', sub: 'Industria 4.0' },
+  { icon: Hammer, label: 'Lorem', sub: 'Lorem Ipsum' },
+  { icon: SlidersHorizontal, label: 'Ipsum', sub: 'Dolor Sit Amet' },
+  { icon: Bot, label: 'Dolor', sub: 'Consectetur Adipiscing' },
+  { icon: Cpu, label: 'Sit', sub: 'Elit Sed Do' },
 ]
 
 export default function EvoluzioneProduttivaSection() {
@@ -70,9 +70,9 @@ export default function EvoluzioneProduttivaSection() {
               className="font-body leading-relaxed"
               style={{ fontSize: 'clamp(15px, 1vw, 17px)', color: 'var(--color-accent-silver)', fontWeight: 300 }}
             >
-              In trent'anni abbiamo trasformato il reparto produttivo:
-              dalla lavorazione manuale ai sistemi CNC,
-              fino alla saldatura robotizzata e ai flussi digitali integrati.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor,
+              incididunt ut labore et dolore magna aliqua,
+              ut enim ad minim veniam quis nostrud exercitation ullamco.
             </p>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function AziendaHero() {
             letterSpacing: '0.2em',
           }}
         >
-          NATI ARTIGIANI. DIVENTATI INDUSTRIA.
+          Lorem Ipsum Dolor Sit Amet
         </div>
 
         <h1
@@ -52,8 +52,8 @@ export default function AziendaHero() {
             fontWeight: 300,
           }}
         >
-          Strutture metalliche su misura per l'industria.
-          Dalla progettazione al prodotto finito, un unico partner di cui fidarsi.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
       </div>
