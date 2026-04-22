@@ -316,11 +316,10 @@ function AccordionItem({ s, isOpen, onToggle }: {
                 }}
               >
                 <span
-                  className="font-body font-medium uppercase block mb-2"
+                  className="font-body font-medium block mb-2"
                   style={{
-                    fontSize: '11px',
-                    letterSpacing: '0.15em',
-                    color: 'var(--color-primary-light)',
+                    fontSize: '15px',
+                    color: '#ffffff',
                   }}
                 >
                   {t.label}
