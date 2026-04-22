@@ -12,8 +12,8 @@ const row1 = [
   {
     sector: 'Food & Beverage',
     title: 'Componentistica INOX',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAXpGBAX9J_RLvckyG_3GSoU6lpv_kb4WXfnOdn0D4zH2I9DnzDyx7nqmSYHX8R1CljvcaUI9jhGVudlpiGtTu7YpHpy-IsrOImH5Q_ORsSb3IV-p8FzKsCPdf0DSoNFFys8yV5BKSNfQwwbbX0VTzPlh3lw05W6T-wcIceD6En6_9rIxWkrnHtqxMqzgLYK2RzpHGe8oHK8BPI5GH7qHv221F2ubMkL-M3WK_0xgcnbxnyLxY3S5sfrl5gWcKuwiSq8vXQFnF2Zw',
-    alt: 'Giunture saldate in acciaio inox',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVXfi5F6ACchgGdf2SA38Qp-R4S6BKzdU0wRKfOOnpmebNiQHdHNe0x6aDMy9wZ7VzLIhtx_gzvErzpa7G0xaar0xfztjk_HI8AhC88AjV44XlAMN3szFmzObr7DXsBRctkoPllZXlEROKweq4VQeQnAXmU0ZicTxQY7tZDwBAULTUfhJJ1sKnHE5BKVDThZr4ZaP5peNh0iyJkl65eBZQLtZQW42Pft6xd2PYEcoqFqUYgjF8_kvF-oAtLSN15g2NFiW6X1Mgug',
+    alt: 'Serbatoi in acciaio inox per il settore alimentare',
     colClass: 'md:col-span-4',
   },
 ]
