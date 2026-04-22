@@ -100,7 +100,7 @@ export default function PortfolioSection() {
       style={{ backgroundColor: 'var(--color-surface)' }}
       className="py-24 px-6 md:px-12"
     >
-      <div className="w-full space-y-10">
+      <div className="max-w-7xl mx-auto space-y-10">
         {/* Header */}
         <div className="flex flex-col items-center gap-6 mb-8">
           <div className="text-center">
