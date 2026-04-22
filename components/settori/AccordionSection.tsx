@@ -245,7 +245,7 @@ function AccordionItem({ s, isOpen, onToggle }: {
       >
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
-          style={{ padding: '32px 40px 56px 40px' }}
+          style={{ padding: '32px 40px 32px 40px' }}
         >
           {/* Left column — image + nav */}
           <div className="flex flex-col gap-3">
