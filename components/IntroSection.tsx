@@ -56,34 +56,29 @@ export default function IntroSection() {
           </p>
 
           <div className="flex gap-16 pt-2">
-            {[
-              { value: 'ISO 9001', label: 'Certificazione Qualità' },
-              { value: 'EN 1090', label: 'Esecuzione Strutture' },
-            ].map((cert) => (
-              <div key={cert.value} className="space-y-1">
-                <div
-                  className="font-display"
-                  style={{
-                    fontSize: 'clamp(19px, 2vw, 26px)',
-                    fontWeight: 700,
-                    color: 'var(--color-primary-light)',
-                    letterSpacing: '-0.01em',
-                  }}
-                >
-                  {cert.value}
-                </div>
-                <p
-                  className="font-body font-medium uppercase"
-                  style={{
-                    fontSize: '10px',
-                    letterSpacing: '0.15em',
-                    color: 'var(--color-text-muted)',
-                  }}
-                >
-                  {cert.label}
-                </p>
+            <div className="space-y-1">
+              <div
+                className="font-display"
+                style={{
+                  fontSize: 'clamp(19px, 2vw, 26px)',
+                  fontWeight: 700,
+                  color: 'var(--color-primary-light)',
+                  letterSpacing: '-0.01em',
+                }}
+              >
+                ISO 9001
               </div>
-            ))}
+              <p
+                className="font-body font-medium uppercase"
+                style={{
+                  fontSize: '10px',
+                  letterSpacing: '0.15em',
+                  color: 'var(--color-text-muted)',
+                }}
+              >
+                Certificazione Qualità
+              </p>
+            </div>
           </div>
         </div>
 

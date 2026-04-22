@@ -2,7 +2,6 @@ const stats = [
   { value: '30+', label: 'Anni di Esperienza' },
   { value: '13m', label: 'Capacità di Piegatura' },
   { value: '4cm', label: 'Spessore lavorazione lamiere' },
-  { value: 'EN 1090', label: 'Certificazione Strutturale' },
 ]
 
 export default function StatsStrip() {
