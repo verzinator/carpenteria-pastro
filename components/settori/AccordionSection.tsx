@@ -311,7 +311,7 @@ function AccordionItem({ s, isOpen, onToggle }: {
                 key={t.label}
                 style={{
                   paddingTop: ti === 0 ? '0' : '32px',
-                  paddingBottom: ti === s.topics.length - 1 ? '32px' : '32px',
+                  paddingBottom: ti === s.topics.length - 1 ? '0' : '32px',
                   borderBottom: ti < s.topics.length - 1 ? '1px solid var(--color-border)' : 'none',
                 }}
               >
