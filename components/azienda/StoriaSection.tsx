@@ -28,7 +28,7 @@ const milestones = [
     year: '2023',
     title: 'Industria 4.0',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9SeCbzgjdlsyeslksoEwL728ki9g9X0GSFFcxFs57HZ4V8dmH5G9JngEYVpx7By2875pmxCFo2nDArl8TOV4Z-OfZqLkk_iDHpmxfwP6qNRup9fEQPGbkrjyvQxgh07GUOS9-ESzw5dD2B6jH6MvDDF04nYi7SWlxi9o33LhLTqSSp-IRGzk2veCe66uzrn3WaIQQl3gFRYmWEaHFiuXO5wl21k9bdWahTaESc6ITwhrt-V8-49j4fEur9tDwJYEVjsoe7qw',
+    src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop',
     alt: 'Digital twin fabbrica',
   },
 ]
