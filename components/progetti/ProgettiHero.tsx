@@ -11,7 +11,7 @@ export default function ProgettiHero() {
         }}
       />
 
-      <div className="container mx-auto px-6 md:px-12 max-w-5xl relative z-10">
+      <div className="container mx-auto px-6 md:px-12 max-w-5xl relative z-10" style={{ transform: 'translateY(-40px)' }}>
         <div
           className="inline-flex items-center px-4 py-1 mb-6 font-body text-[10px] font-medium uppercase"
           style={{

@@ -13,7 +13,7 @@ export default function SettoriHero() {
         }}
       />
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 max-w-5xl">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 max-w-5xl" style={{ transform: 'translateY(-40px)' }}>
         {/* Tag */}
         <div
           className="inline-flex items-center px-4 py-1 mb-6 font-body text-[10px] font-medium uppercase"
