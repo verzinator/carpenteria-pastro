@@ -15,7 +15,7 @@ export default function StatsStrip() {
       className="py-16"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+        <div className="grid grid-cols-3 gap-8 md:gap-4">
           {stats.map((stat) => (
             <div
               key={stat.label}
