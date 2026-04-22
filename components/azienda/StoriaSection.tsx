@@ -54,7 +54,7 @@ export default function StoriaSection() {
         </div>
 
         {/* Card grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {milestones.map((m) => (
             <div key={m.year} className="group">
               <div className="relative overflow-hidden mb-0" style={{ aspectRatio: '4/3' }}>
