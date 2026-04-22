@@ -51,7 +51,7 @@ export default function ProgettiHero() {
           }}
         >
           Componenti metallici ad alta precisione su disegno tecnico del cliente.
-          Dalla carpenteria pesante alla meccanica fine.
+          Dal progetto all'assemblaggio finale.
         </p>
       </div>
     </section>
