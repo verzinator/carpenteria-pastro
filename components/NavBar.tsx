@@ -36,8 +36,8 @@ export default function NavBar() {
             width={180}
             height={50}
             priority
-            className="w-auto h-auto max-h-12 md:max-h-14"
-            style={{ width: 'auto', height: 'auto' }}
+            className="w-auto"
+            style={{ height: '36px', width: 'auto' }}
           />
         </a>
 
