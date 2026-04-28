@@ -11,7 +11,7 @@ type Progetto = {
   _id: string
   titolo: string
   slug: string
-  lavorazione?: string[]
+  lavorazione?: string | string[]
   materialeLavorato?: string
   anno?: number
   cliente?: string
@@ -84,9 +84,9 @@ export default async function ProgettoPage({ params }: { params: Promise<{ slug:
           <BackButton href="/progetti" label="Tutti i progetti" />
 
           {/* Lavorazione tags */}
-          {p.lavorazione && p.lavorazione.length > 0 && (
+          {p.lavorazione && (Array.isArray(p.lavorazione) ? p.lavorazione.length > 0 : true) && (
             <div className="mb-4 flex flex-wrap gap-2">
-              {p.lavorazione.map((tag) => (
+              {(Array.isArray(p.lavorazione) ? p.lavorazione : [p.lavorazione]).map((tag) => (
                 <span
                   key={tag}
                   className="font-body font-medium uppercase"
@@ -127,13 +127,13 @@ export default async function ProgettoPage({ params }: { params: Promise<{ slug:
               className="flex flex-wrap gap-8 mb-10 pt-6"
               style={{ borderTop: '1px solid var(--color-border)' }}
             >
-              {p.lavorazione && p.lavorazione.length > 0 && (
+              {p.lavorazione && (Array.isArray(p.lavorazione) ? p.lavorazione.length > 0 : true) && (
                 <div className="flex flex-col gap-1">
                   <span className="font-body uppercase" style={{ fontSize: '9px', letterSpacing: '0.2em', color: 'var(--color-text-muted)' }}>
                     Lavorazione
                   </span>
                   <span className="font-body" style={{ fontSize: '13px', color: 'var(--color-text)', fontFamily: 'monospace' }}>
-                    {p.lavorazione.join(', ')}
+                    {Array.isArray(p.lavorazione) ? p.lavorazione.join(', ') : p.lavorazione}
                   </span>
                 </div>
               )}
