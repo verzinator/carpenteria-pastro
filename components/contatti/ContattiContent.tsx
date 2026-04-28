@@ -115,17 +115,25 @@ export default function ContattiContent() {
               </h2>
               <div className="flex flex-col gap-6">
                 <div>
+                  <span style={infoLabelStyle}>Azienda</span>
+                  <span style={infoValueStyle}>Carpenteria Pastro s.r.l.</span>
+                </div>
+                <div>
                   <span style={infoLabelStyle}>Indirizzo</span>
-                  <span style={infoValueStyle}>Via Esempio 1, Campodarsego (PD)</span>
+                  <span style={infoValueStyle}>Via del Lavoro, 8<br />31050 Vedelago (TV)</span>
                 </div>
                 <div>
                   <span style={infoLabelStyle}>Telefono</span>
                   <a
-                    href="tel:+390000000000"
+                    href="tel:+390423401219"
                     style={{ ...infoValueStyle, color: 'var(--color-primary-light)', textDecoration: 'none' }}
                   >
-                    +39 000 000 0000
+                    0423-401219
                   </a>
+                </div>
+                <div>
+                  <span style={infoLabelStyle}>Fax</span>
+                  <span style={infoValueStyle}>0423-709147</span>
                 </div>
                 <div>
                   <span style={infoLabelStyle}>Email</span>

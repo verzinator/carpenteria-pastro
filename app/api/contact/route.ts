@@ -86,14 +86,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || process.env.CONTACT_EMAIL
-    if (!contactEmail) {
-      console.error('[Contact API] Email destinatario non configurata')
-      return NextResponse.json(
-        { success: false, message: 'Errore di configurazione server' },
-        { status: 500 }
-      )
-    }
+    const contactEmail = 'diegovianellowork@gmail.com'
 
     const safeName = escapeHtml(nome.trim())
     const safeEmail = escapeHtml(email.trim())
@@ -135,8 +128,8 @@ export async function POST(req: NextRequest) {
           <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;" />
           <p style="font-size: 12px; color: #666;">
             <strong>Carpenteria Pastro S.r.l.</strong><br>
-            Via Esempio 1, Campodarsego (PD)<br>
-            Tel: +39 000 000 0000<br>
+            Via del Lavoro, 8 – 31050 Vedelago (TV)<br>
+            Tel: 0423-401219 | Fax: 0423-709147<br>
             Email: info@carpenteriapastro.it
           </p>
         </div>
