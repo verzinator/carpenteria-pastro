@@ -11,16 +11,20 @@ const progetto = defineType({
       name: 'lavorazione',
       title: 'Lavorazione',
       type: 'array',
-      of: [{ type: 'string' }],
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Macchinari industriali per sollevamento', value: 'Macchinari industriali per sollevamento' },
+              { title: 'Macchine movimento terra', value: 'Macchine movimento terra' },
+              { title: 'Macchine lavorazioni pietra', value: 'Macchine lavorazioni pietra' },
+              { title: 'Linee di automazione industriale', value: 'Linee di automazione industriale' },
+            ],
+          },
+        },
+      ],
       description: 'Seleziona tra le categorie predefinite o aggiungi custom tags',
-      options: {
-        list: [
-          { title: 'Macchinari industriali per sollevamento', value: 'Macchinari industriali per sollevamento' },
-          { title: 'Macchine movimento terra', value: 'Macchine movimento terra' },
-          { title: 'Macchine lavorazioni pietra', value: 'Macchine lavorazioni pietra' },
-          { title: 'Linee di automazione industriale', value: 'Linee di automazione industriale' },
-        ],
-      },
     }),
     defineField({ name: 'materialeLavorato', title: 'Materiale / Specifiche', type: 'string', description: 'Es: AISI 304L | 2400×1200 mm' }),
     defineField({ name: 'immagineCopertina', title: 'Immagine copertina', type: 'image', options: { hotspot: true } }),
