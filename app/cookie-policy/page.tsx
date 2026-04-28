@@ -10,59 +10,117 @@ export const metadata: Metadata = {
 const sections = [
   {
     title: '1. Cosa sono i cookie',
-    content: `I cookie sono piccoli file di testo che i siti web visitati dall'utente inviano al dispositivo (computer, tablet, smartphone), dove vengono memorizzati per essere ritrasmessi allo stesso sito alla successiva visita. Grazie ai cookie il sito ricorda le azioni e le preferenze dell'utente, evitando di doverle reinserire ogni volta.`,
+    content: `I cookie sono piccoli file di testo che i siti web visitati dall'utente inviano al dispositivo (computer, tablet, smartphone), dove vengono memorizzati per essere ritrasmessi allo stesso sito alla successiva visita. Grazie ai cookie il sito ricorda le azioni e le preferenze dell'utente, evitando di doverle reinserire ogni volta.
+
+I cookie possono durare una singola sessione (cookie di sessione) oppure periodi più lunghi (cookie persistenti), e possono essere installati direttamente dal sito o da terze parti.`,
   },
   {
-    title: '2. Tipologie di cookie utilizzati',
-    content: `Il presente sito utilizza le seguenti categorie di cookie:
+    title: '2. Tipologie di cookie utilizzati su questo sito',
+    content: `Il presente sito www.carpenteriapastro.it utilizza le seguenti categorie di cookie:
 
-Cookie tecnici (necessari)
-Sono indispensabili per il corretto funzionamento del sito e non richiedono il consenso dell'utente. Consentono la navigazione e l'utilizzo delle funzionalità di base (es. memorizzazione della sessione, preferenze di lingua). Senza questi cookie alcune funzioni del sito non sarebbero disponibili.
+A) Cookie Tecnici (Necessari)
+Sono indispensabili per il corretto funzionamento del sito e non richiedono il consenso dell'utente ai sensi dell'art. 122 D.Lgs. 196/2003. Consentono:
+• La navigazione e l'utilizzo delle funzionalità di base del sito
+• La memorizzazione della sessione utente
+• L'autenticazione nei form di contatto
+• La sicurezza durante le transazioni (CSRF protection)
+• La gestione delle preferenze (es. lingua)
 
-Cookie analitici (statistici)
-Raccolgono informazioni aggregate e anonimizzate sulle modalità di utilizzo del sito (es. pagine visitate, tempo di permanenza, errori). Vengono utilizzati esclusivamente per migliorare le prestazioni e l'esperienza di navigazione. Non sono utilizzati per profilare l'utente.
+Senza questi cookie alcune funzioni del sito non sarebbero disponibili.
 
-Cookie di terze parti
-Il sito potrebbe integrare contenuti o servizi di terze parti (es. mappe, video, strumenti di analisi) che possono installare cookie propri. Per questi cookie si rimanda alle rispettive informative della privacy delle terze parti.`,
+B) Cookie Analitici (Statistici)
+Raccolgono informazioni aggregate e anonimizzate sulle modalità di utilizzo del sito (es. pagine visitate, tempo di permanenza, fonte di provenienza, errori 404). Vengono utilizzati esclusivamente per:
+• Migliorare le prestazioni e l'esperienza di navigazione
+• Comprendere il comportamento degli utenti
+• Identificare le sezioni del sito con migliore engagement
+
+Non sono utilizzati per profilare l'utente o per collegare i dati a identità specifiche. Tutti i dati sono anonimizzati e aggregati.
+
+C) Cookie di Terze Parti
+Il sito non integra attualmente servizi di terze parti che installano cookie (es. mappe di Google, video YouTube). In caso di futura integrazione, la presente informativa verrà aggiornata.`,
   },
   {
-    title: '3. Cookie di terze parti presenti',
-    content: `Attualmente il sito non utilizza cookie di profilazione o di marketing di terze parti. In caso di futura integrazione di tali strumenti, la presente informativa verrà aggiornata con l'indicazione delle terze parti coinvolte e i link alle rispettive policy.`,
+    title: '3. Strumenti di tracciamento utilizzati',
+    content: `Attualmente il sito utilizza esclusivamente Google Analytics 4 per l'analisi anonimizzata del traffico.
+
+Google Analytics:
+• Non raccoglie dati identificativi personali (non traccia indirizzi email, nomi, ID cliente)
+• Anonimizza gli indirizzi IP
+• Consente a Carpenteria Pastro di analizzare il comportamento aggregato dei visitatori
+• Rispetta gli standard GDPR per l'anonimizzazione dei dati
+
+Non sono utilizzati cookie di retargeting, pixel di tracciamento di terze parti, o strumenti di profilazione comportamentale.`,
   },
   {
-    title: '4. Durata dei cookie',
-    content: `Cookie di sessione: vengono cancellati automaticamente alla chiusura del browser.
+    title: '4. Durata e scadenza dei cookie',
+    content: `Cookie di sessione (tecnici):
+• Scadono automaticamente alla chiusura del browser
+• Esempi: cookie di autenticazione, token CSRF
 
-Cookie persistenti: rimangono sul dispositivo per un periodo di tempo definito (indicato nella tabella cookie, se presente) o fino alla cancellazione manuale da parte dell'utente.`,
+Cookie persistenti (analitici):
+• Google Analytics: 2 anni dalla data di installazione
+• Preferenze del sito (lingua, tema): 1 anno
+
+Cookie di tracciamento (non presenti):
+• N/A — il sito non utilizza cookie di marketing o profilazione a lungo termine`,
   },
   {
-    title: '5. Come gestire o disabilitare i cookie',
-    content: `L'utente può gestire, bloccare o eliminare i cookie attraverso le impostazioni del proprio browser. Di seguito i link alle istruzioni per i browser più diffusi:
+    title: '5. Come gestire, bloccare o disabilitare i cookie',
+    content: `L'utente può gestire, bloccare o eliminare i cookie attraverso le impostazioni del proprio browser in qualsiasi momento. Di seguito i link alle istruzioni per i browser più diffusi:
 
+Browser Desktop:
 • Google Chrome: Impostazioni > Privacy e sicurezza > Cookie e altri dati dei siti
 • Mozilla Firefox: Opzioni > Privacy e sicurezza > Cookie e dati dei siti
 • Safari: Preferenze > Privacy > Gestisci dati siti web
 • Microsoft Edge: Impostazioni > Cookie e autorizzazioni sito
+• Opera: Impostazioni > Privacy e sicurezza > Cookie
 
-Si ricorda che la disabilitazione dei cookie tecnici potrebbe compromettere il corretto funzionamento del sito o di alcune sue funzionalità.`,
+Browser Mobili:
+• iOS Safari: Impostazioni > Safari > Privacy > Blocca tutti i cookie
+• Android Chrome: Impostazioni > Sito web > Cookie
+
+Disabilitare Google Analytics:
+L'utente può inoltre scaricare il "Google Analytics Opt-out Browser Add-on" dal sito di Google per disabilitare Google Analytics su tutti i siti web.
+
+Avvertenza importante: La disabilitazione dei cookie tecnici potrebbe compromettere il corretto funzionamento del sito o di alcune sue funzionalità (es. il form di contatto potrebbe non funzionare correttamente). I cookie analitici possono essere disabilitati senza conseguenze sul funzionamento del sito.`,
   },
   {
-    title: '6. Base giuridica',
-    content: `Il trattamento dei dati tramite cookie tecnici avviene ai sensi dell'art. 6, par. 1, lett. b del GDPR (esecuzione di un contratto o misure precontrattuali) e dell'art. 122 del D.Lgs. 196/2003 (Codice Privacy).
+    title: '6. Base giuridica del trattamento',
+    content: `Cookie tecnici (necessari):
+Art. 6, par. 1, lett. b GDPR (esecuzione di un contratto o misure precontrattuali)
+Art. 122 D.Lgs. 196/2003 (Codice Privacy italiano)
 
-Per i cookie analitici con dati aggregati e anonimizzati non è richiesto il consenso ai sensi delle Linee guida del Garante per la protezione dei dati personali.`,
+Cookie analitici (anonimizzati):
+Art. 6, par. 1, lett. f GDPR (interesse legittimo del Titolare a comprendere le prestazioni del sito)
+Art. 122 D.Lgs. 196/2003
+Linee guida del Garante per la protezione dei dati personali: i cookie analitici con dati aggregati e anonimizzati non richiedono consenso preventivo
+
+Non è richiesto il consenso esplicito per i cookie tecnici, in quanto indispensabili al funzionamento del servizio richiesto.`,
   },
   {
-    title: '7. Titolare del trattamento',
+    title: '7. Titolare del trattamento dei dati',
     content: `Carpenteria Pastro S.r.l.
-Via Esempio 1, Campodarsego (PD)
-Email: info@carpenteriapastro.it
+Via del Lavoro, 8
+31050 Vedelago (TV) — Italia
 
-Per qualsiasi richiesta relativa all'utilizzo dei cookie e al trattamento dei dati personali è possibile contattare il Titolare all'indirizzo sopra indicato.`,
+Contatti per richieste sulla privacy e i cookie:
+• Email: info@carpenteriapastro.it
+• Telefono: 0423-401219
+• Fax: 0423-709147
+
+Per qualsiasi domanda, reclamo o richiesta relativa all'utilizzo dei cookie e al trattamento dei dati personali è possibile contattare il Titolare agli indirizzi sopra indicati. L'interessato ha inoltre il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (www.garanteprivacy.it).`,
   },
   {
     title: '8. Modifiche alla Cookie Policy',
-    content: `Il Titolare si riserva il diritto di modificare la presente Cookie Policy in qualsiasi momento, in particolare a seguito di variazioni normative o di aggiornamenti del sito. Le modifiche entreranno in vigore dalla data di pubblicazione su questa pagina.`,
+    content: `Il Titolare si riserva il diritto di modificare la presente Cookie Policy in qualsiasi momento, in particolare a seguito di:
+• Variazioni normative (es. aggiornamenti GDPR o Codice Privacy)
+• Aggiornamenti tecnici del sito
+• Integrazione di nuovi strumenti di tracciamento
+• Modifiche della struttura aziendale
+
+Le modifiche entreranno in vigore dalla data di pubblicazione su questa pagina. Si consiglia agli utenti di consultare periodicamente questa informativa per verificare eventuali aggiornamenti.
+
+Data di ultimo aggiornamento: aprile 2026`,
   },
 ]
 
@@ -91,7 +149,7 @@ export default function CookiePolicyPage() {
               Cookie Policy
             </h1>
             <p className="font-body mb-12" style={{ fontSize: '13px', color: 'var(--color-text-muted)' }}>
-              Informativa ai sensi dell'art. 122 D.Lgs. 196/2003 e del Reg. (UE) 2016/679 — Ultimo aggiornamento: gennaio 2025
+              Informativa ai sensi dell'art. 122 D.Lgs. 196/2003 e del Reg. (UE) 2016/679 — Ultimo aggiornamento: aprile 2026
             </p>
 
             <div className="flex flex-col gap-10">
