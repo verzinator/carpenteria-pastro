@@ -17,8 +17,13 @@ export type ProgettoItem = {
 export default function ProgettiGrid({ progetti }: { progetti: ProgettoItem[] }) {
   const [activeFilter, setActiveFilter] = useState('Tutti')
 
-  const uniqueSettori = Array.from(new Set(progetti.map((p) => p.settore).filter(Boolean) as string[])).sort()
-  const filtri = ['Tutti', ...uniqueSettori]
+  const categorie = [
+    'Macchinari industriali per sollevamento',
+    'Macchine movimento terra',
+    'Macchine lavorazioni pietra',
+    'Linee di automazione industriale',
+  ]
+  const filtri = ['Tutti', ...categorie]
 
   const filtered = activeFilter === 'Tutti'
     ? progetti

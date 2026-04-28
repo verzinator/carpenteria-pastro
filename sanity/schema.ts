@@ -7,7 +7,20 @@ const progetto = defineType({
   fields: [
     defineField({ name: 'titolo', title: 'Titolo', type: 'string', validation: Rule => Rule.required() }),
     defineField({ name: 'slug', title: 'Slug (URL)', type: 'slug', options: { source: 'titolo' }, validation: Rule => Rule.required() }),
-    defineField({ name: 'settore', title: 'Settore', type: 'string', description: 'Es: Macchine e impianti, Agricoltura, Energia…' }),
+    defineField({
+      name: 'settore',
+      title: 'Settore',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Macchinari industriali per sollevamento', value: 'Macchinari industriali per sollevamento' },
+          { title: 'Macchine movimento terra', value: 'Macchine movimento terra' },
+          { title: 'Macchine lavorazioni pietra', value: 'Macchine lavorazioni pietra' },
+          { title: 'Linee di automazione industriale', value: 'Linee di automazione industriale' },
+        ],
+      },
+      validation: Rule => Rule.required(),
+    }),
     defineField({ name: 'lavorazione', title: 'Lavorazione', type: 'string', description: 'Es: Saldatura, Taglio, Piegatura…' }),
     defineField({ name: 'materialeLavorato', title: 'Materiale / Specifiche', type: 'string', description: 'Es: AISI 304L | 2400×1200 mm' }),
     defineField({ name: 'immagineCopertina', title: 'Immagine copertina', type: 'image', options: { hotspot: true } }),
