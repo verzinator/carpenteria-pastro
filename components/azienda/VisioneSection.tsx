@@ -1,21 +1,21 @@
 import Image from 'next/image'
-import { Lightbulb, Leaf, Settings2 } from 'lucide-react'
+import { Lightbulb, Gauge, Handshake } from 'lucide-react'
 
 const pillars = [
   {
     icon: Lightbulb,
     title: 'Innovazione Continua',
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.',
+    body: 'Investimento costante in tecnologie all\'avanguardia e processi produttivi avanzati per anticipare le esigenze del mercato e offrire soluzioni sempre più performanti.',
   },
   {
-    icon: Leaf,
-    title: 'Sostenibilità Integrata',
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.',
-  },
-  {
-    icon: Settings2,
+    icon: Gauge,
     title: 'Precisione Assoluta',
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.',
+    body: 'Garanzia di massima qualità in ogni fase della lavorazione, grazie a macchinari a controllo numerico e competenze tecniche certificate che assicurano tolleranze millimetriche.',
+  },
+  {
+    icon: Handshake,
+    title: 'Attenzione al Cliente',
+    body: 'Approccio personalizzato che accompagna il cliente dalla progettazione su misura alla consegna, con servizi di consulenza, rispetto dei tempi concordati e assistenza post-vendita.',
   },
 ]
 
@@ -54,18 +54,6 @@ export default function VisioneSection() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Text + pillars */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <p
-              className="font-body leading-relaxed mb-12"
-              style={{
-                fontSize: 'clamp(15px, 1vw, 17px)',
-                color: 'var(--color-accent-silver)',
-                fontWeight: 300,
-                maxWidth: '520px',
-              }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
-            </p>
-
             <div className="space-y-8">
               {pillars.map(({ icon: Icon, title, body }) => (
                 <div key={title} className="flex items-start gap-6">

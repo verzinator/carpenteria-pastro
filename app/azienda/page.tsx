@@ -1,10 +1,8 @@
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import AziendaHero from '@/components/azienda/AziendaHero'
-import StoriaSection from '@/components/azienda/StoriaSection'
+import TimelineSection from '@/components/azienda/TimelineSection'
 import VisioneSection from '@/components/azienda/VisioneSection'
-import EvoluzioneProduttivaSection from '@/components/azienda/EvoluzioneProduttivaSection'
-import PersoneSection from '@/components/azienda/PersoneSection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -19,10 +17,8 @@ export default function AziendaPage() {
       <NavBar />
       <main className="pt-16">
         <AziendaHero />
-        <StoriaSection />
+        <TimelineSection />
         <VisioneSection />
-        <EvoluzioneProduttivaSection />
-        <PersoneSection />
       </main>
       <Footer />
     </>

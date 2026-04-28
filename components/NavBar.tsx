@@ -1,6 +1,7 @@
 'use client'
 
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -28,12 +29,16 @@ export default function NavBar() {
     >
       <div className="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1440px] mx-auto w-full">
         {/* Logo */}
-        <a
-          href="/"
-          className="font-display tracking-tighter uppercase hover:opacity-80 transition-opacity"
-          style={{ fontSize: '18px', color: 'var(--color-text)', fontWeight: 800, letterSpacing: '-0.02em' }}
-        >
-          PASTRO
+        <a href="/" className="hover:opacity-80 transition-opacity flex-shrink-0">
+          <Image
+            src="/pastro-logo.png"
+            alt="Carpenteria Pastro"
+            width={180}
+            height={50}
+            priority
+            className="w-auto h-auto max-h-12 md:max-h-14"
+            style={{ width: 'auto', height: 'auto' }}
+          />
         </a>
 
         {/* Desktop nav + CTA */}
