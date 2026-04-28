@@ -25,8 +25,8 @@ function ProjectCard({
 
   return (
     <div
-      className="group relative overflow-hidden h-full"
-      style={{ borderRadius: 'var(--radius-sm)', minHeight: '280px' }}
+      className="group relative overflow-hidden"
+      style={{ borderRadius: 'var(--radius-sm)', aspectRatio: '16/10' }}
     >
       {img ? (
         <Image
@@ -46,7 +46,7 @@ function ProjectCard({
             'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)',
         }}
       />
-      <div className="absolute bottom-0 left-0 w-full p-6 md:p-8">
+      <div className="absolute bottom-0 left-0 w-full p-4 md:p-6">
         {tags.length > 0 && (
           <div
             className="font-body font-medium uppercase mb-2 flex flex-wrap gap-2"
@@ -146,7 +146,7 @@ export default async function PortfolioSection() {
         </div>
 
         {/* 2x2 Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:h-[360px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {progetti.length > 0 ? (
             progetti.map((p) => {
               const imgUrl = p.immagineCopertina
