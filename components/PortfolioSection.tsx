@@ -1,65 +1,44 @@
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
+import { client, urlFor } from '@/lib/sanity'
 
-const row1 = [
-  {
-    sector: 'Lorem Ipsum',
-    title: 'Lorem Ipsum',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMtOCI3blxtGR3pRsEnvNRSBOgZzMP_7rCDqByID8guySpUJATNRWtt-kLIV2SaXeU0aOnDlzuffz_OkowOkPRdUTBwsTivj1N0G-fMOdcZwfZjn1g82kFQPbbf195BOx-dQJGEVauJcsCXUW6BPL8u6DDzyn97MVMXLL5qPc6S2ZywTzrHED-yFMqu33NdnOXfioUkWwj8T2P3oki-9Yt3ASPZypdFTgESyzTvIV8-fk2xVOtJirwRAj8sNbCLVQiRVwEZU5hyQ',
-    alt: 'Struttura metallica per linea produzione robotizzata',
-    colClass: 'md:col-span-8',
-  },
-  {
-    sector: 'Lorem Ipsum',
-    title: 'Lorem Ipsum',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVXfi5F6ACchgGdf2SA38Qp-R4S6BKzdU0wRKfOOnpmebNiQHdHNe0x6aDMy9wZ7VzLIhtx_gzvErzpa7G0xaar0xfztjk_HI8AhC88AjV44XlAMN3szFmzObr7DXsBRctkoPllZXlEROKweq4VQeQnAXmU0ZicTxQY7tZDwBAULTUfhJJ1sKnHE5BKVDThZr4ZaP5peNh0iyJkl65eBZQLtZQW42Pft6xd2PYEcoqFqUYgjF8_kvF-oAtLSN15g2NFiW6X1Mgug',
-    alt: 'Serbatoi in acciaio inox per il settore alimentare',
-    colClass: 'md:col-span-4',
-  },
-]
-
-const row2 = [
-  {
-    sector: 'Lorem Ipsum',
-    title: 'Lorem Ipsum',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUHT-tzDuf0dH-xfsiMGcTOGi3NK-I_QTZC_dUSoq_ofRiVeR9XVfsX5vzEpDGp6Hr8eZIUeJHecpcW3FXsrCfooSmJbJs5opjhvPhOys4X0iIiI_nwcuUVRhDofkkfmG4KHVLeYhU0sIWDy8OMf4o-XU9n-Y_2fU-XXVqaouKrQcsFE-WtMS_m293vuN5rOgHzlgoobE7UFR_MmdOvIHO7gnOQRxRV-p0M6Z8_s-Fay4lA9YEi1f9CXqhi3-UZIUimRGWarcDbQ',
-    alt: 'Facciata microforata in metallo',
-    colClass: 'md:col-span-4',
-  },
-  {
-    sector: 'Lorem Ipsum',
-    title: 'Lorem Ipsum',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAceCXbqO-PZXg_PRwjMWqaHTtDXRx6IcrPO5Cygn33o508lU3Xs7T4r8afeRilzLY0vcrEJkNe4NL6H7SUHz31_w_J0fkxKx1F0KUwC4nBNBE6qHUoI93EbWN5rJztXYINj-0tu2m63kmlZGK700zJLqPe4QeAOMJ50CA3B6AuozmfYFXV_gez2pNqOuc1hegfoh6OxsyP-KOI0xjGhOvU2TzVMoKDmUMymakFMqVpw5IGS3cW9SbgemgfX_dkTCU9h3L-F_XMqA',
-    alt: 'Basamento in acciaio per macchinario agricolo',
-    colClass: 'md:col-span-8',
-  },
-]
+type ProgettoItem = {
+  _id: string
+  titolo: string
+  slug?: string
+  lavorazione?: string | string[]
+  immagineCopertina?: { asset: { _ref: string } }
+}
 
 function ProjectCard({
-  sector,
-  title,
+  titulo,
+  lavorazione,
   img,
   alt,
-  colClass,
 }: {
-  sector: string
-  title: string
-  img: string
+  titulo: string
+  lavorazione?: string | string[]
+  img: string | null
   alt: string
-  colClass: string
 }) {
+  const tags = Array.isArray(lavorazione) ? lavorazione : (lavorazione ? [lavorazione] : [])
+
   return (
     <div
-      className={`${colClass} group relative overflow-hidden md:h-full`}
+      className="group relative overflow-hidden h-full"
       style={{ borderRadius: 'var(--radius-sm)', minHeight: '280px' }}
     >
-      <Image
-        src={img}
-        alt={alt}
-        fill
-        className="object-cover transition-transform duration-700 group-hover:scale-105"
-        sizes="(max-width: 768px) 100vw, 66vw"
-      />
+      {img ? (
+        <Image
+          src={img}
+          alt={alt}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        />
+      ) : (
+        <div className="w-full h-full" style={{ backgroundColor: 'var(--color-surface-3)' }} />
+      )}
       <div
         className="absolute inset-0"
         style={{
@@ -68,16 +47,20 @@ function ProjectCard({
         }}
       />
       <div className="absolute bottom-0 left-0 w-full p-6 md:p-8">
-        <div
-          className="font-body font-medium uppercase mb-2"
-          style={{
-            fontSize: '10px',
-            letterSpacing: '0.15em',
-            color: 'var(--color-primary-light)',
-          }}
-        >
-          {sector}
-        </div>
+        {tags.length > 0 && (
+          <div
+            className="font-body font-medium uppercase mb-2 flex flex-wrap gap-2"
+            style={{
+              fontSize: '10px',
+              letterSpacing: '0.15em',
+              color: 'var(--color-primary-light)',
+            }}
+          >
+            {tags.slice(0, 1).map((tag) => (
+              <span key={tag}>{tag}</span>
+            ))}
+          </div>
+        )}
         <h3
           className="font-display"
           style={{
@@ -86,14 +69,28 @@ function ProjectCard({
             color: 'var(--color-text)',
           }}
         >
-          {title}
+          {titulo}
         </h3>
       </div>
     </div>
   )
 }
 
-export default function PortfolioSection() {
+export default async function PortfolioSection() {
+  let progetti: ProgettoItem[] = []
+
+  try {
+    const query = `*[_type == "progetto"] | order(_createdAt desc)[0..3] {
+      _id,
+      titolo,
+      "slug": slug.current,
+      lavorazione,
+      immagineCopertina
+    }`
+    progetti = await client.fetch(query)
+  } catch (err) {
+    console.error('[PortfolioSection] Fetch error:', err)
+  }
   return (
     <section
       id="portfolio"
@@ -113,7 +110,7 @@ export default function PortfolioSection() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Lorem Ipsum
+              I nostri Progetti
             </h2>
             <p
               className="font-body"
@@ -124,7 +121,7 @@ export default function PortfolioSection() {
                 maxWidth: '55ch',
               }}
             >
-              Lorem Ipsum
+              Scopri i progetti realizzati per i nostri clienti. Dal design alla realizzazione, ogni commessa è una sfida che affrontiamo con dedizione.
             </p>
           </div>
           <a
@@ -139,7 +136,7 @@ export default function PortfolioSection() {
               borderRadius: 'var(--radius-sm)',
             }}
           >
-            Lorem Ipsum
+            Scopri Tutti
             <ArrowRight
               size={14}
               className="transition-transform duration-200 group-hover:translate-x-1"
@@ -147,18 +144,23 @@ export default function PortfolioSection() {
           </a>
         </div>
 
-        {/* Row 1: 8 + 4 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:h-[420px]">
-          {row1.map((p) => (
-            <ProjectCard key={p.title} {...p} />
-          ))}
-        </div>
+        {/* 2x2 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:h-[360px]">
+          {progetti.map((p) => {
+            const imgUrl = p.immagineCopertina
+              ? urlFor(p.immagineCopertina).width(600).height(360).url()
+              : null
 
-        {/* Row 2: 4 + 8 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:h-[360px]">
-          {row2.map((p) => (
-            <ProjectCard key={p.title} {...p} />
-          ))}
+            return (
+              <ProjectCard
+                key={p._id}
+                titulo={p.titolo}
+                lavorazione={p.lavorazione}
+                img={imgUrl}
+                alt={p.titolo}
+              />
+            )
+          })}
         </div>
       </div>
     </section>
