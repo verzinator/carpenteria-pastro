@@ -80,7 +80,7 @@ export default async function PortfolioSection() {
   let progetti: ProgettoItem[] = []
 
   try {
-    const query = `*[_type == "progetto"] | order(_createdAt desc)[0..3] {
+    const query = `*[_type == "progetto"] | order(_createdAt desc) [0...4] {
       _id,
       titolo,
       "slug": slug.current,
@@ -88,6 +88,7 @@ export default async function PortfolioSection() {
       immagineCopertina
     }`
     progetti = await client.fetch(query)
+    console.log('[PortfolioSection] Fetched projects:', progetti.length)
   } catch (err) {
     console.error('[PortfolioSection] Fetch error:', err)
   }
@@ -146,21 +147,30 @@ export default async function PortfolioSection() {
 
         {/* 2x2 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:h-[360px]">
-          {progetti.map((p) => {
-            const imgUrl = p.immagineCopertina
-              ? urlFor(p.immagineCopertina).width(600).height(360).url()
-              : null
+          {progetti.length > 0 ? (
+            progetti.map((p) => {
+              const imgUrl = p.immagineCopertina
+                ? urlFor(p.immagineCopertina).width(600).height(360).url()
+                : null
 
-            return (
-              <ProjectCard
-                key={p._id}
-                titulo={p.titolo}
-                lavorazione={p.lavorazione}
-                img={imgUrl}
-                alt={p.titolo}
-              />
-            )
-          })}
+              return (
+                <ProjectCard
+                  key={p._id}
+                  titulo={p.titolo}
+                  lavorazione={p.lavorazione}
+                  img={imgUrl}
+                  alt={p.titolo}
+                />
+              )
+            })
+          ) : (
+            <div
+              className="col-span-full text-center py-12"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              Nessun progetto disponibile al momento.
+            </div>
+          )}
         </div>
       </div>
     </section>
