@@ -11,8 +11,7 @@ type Progetto = {
   _id: string
   titolo: string
   slug: string
-  settore?: string
-  lavorazione?: string
+  lavorazione?: string[]
   materialeLavorato?: string
   anno?: number
   cliente?: string
@@ -25,7 +24,6 @@ const query = `*[_type == "progetto" && slug.current == $slug][0] {
   _id,
   titolo,
   "slug": slug.current,
-  settore,
   lavorazione,
   materialeLavorato,
   anno,
@@ -85,23 +83,26 @@ export default async function ProgettoPage({ params }: { params: Promise<{ slug:
           {/* Back link */}
           <BackButton href="/progetti" label="Tutti i progetti" />
 
-          {/* Settore tag */}
-          {p.settore && (
-            <div className="mb-4">
-              <span
-                className="font-body font-medium uppercase"
-                style={{
-                  fontSize: '10px',
-                  letterSpacing: '0.2em',
-                  color: 'var(--color-primary-light)',
-                  padding: '4px 10px',
-                  border: '1px solid var(--color-primary-light)',
-                  borderRadius: 'var(--radius-sm)',
-                  backgroundColor: 'rgba(77,143,212,0.08)',
-                }}
-              >
-                {p.settore}
-              </span>
+          {/* Lavorazione tags */}
+          {p.lavorazione && p.lavorazione.length > 0 && (
+            <div className="mb-4 flex flex-wrap gap-2">
+              {p.lavorazione.map((tag) => (
+                <span
+                  key={tag}
+                  className="font-body font-medium uppercase"
+                  style={{
+                    fontSize: '10px',
+                    letterSpacing: '0.2em',
+                    color: 'var(--color-primary-light)',
+                    padding: '4px 10px',
+                    border: '1px solid var(--color-primary-light)',
+                    borderRadius: 'var(--radius-sm)',
+                    backgroundColor: 'rgba(77,143,212,0.08)',
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           )}
 
@@ -126,13 +127,13 @@ export default async function ProgettoPage({ params }: { params: Promise<{ slug:
               className="flex flex-wrap gap-8 mb-10 pt-6"
               style={{ borderTop: '1px solid var(--color-border)' }}
             >
-              {p.lavorazione && (
+              {p.lavorazione && p.lavorazione.length > 0 && (
                 <div className="flex flex-col gap-1">
                   <span className="font-body uppercase" style={{ fontSize: '9px', letterSpacing: '0.2em', color: 'var(--color-text-muted)' }}>
                     Lavorazione
                   </span>
                   <span className="font-body" style={{ fontSize: '13px', color: 'var(--color-text)', fontFamily: 'monospace' }}>
-                    {p.lavorazione}
+                    {p.lavorazione.join(', ')}
                   </span>
                 </div>
               )}

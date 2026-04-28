@@ -19,7 +19,6 @@ const GROQ = encodeURIComponent(`*[_type == "progetto"] | order(_createdAt desc)
   _id,
   titolo,
   "slug": slug.current,
-  settore,
   lavorazione,
   materialeLavorato,
   immagineCopertina

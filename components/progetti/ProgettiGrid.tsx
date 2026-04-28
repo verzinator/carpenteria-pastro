@@ -8,8 +8,7 @@ export type ProgettoItem = {
   _id: string
   titolo: string
   slug?: string
-  settore?: string
-  lavorazione?: string
+  lavorazione?: string[]
   materialeLavorato?: string
   immagineCopertina?: { asset: { _ref: string } }
 }
@@ -27,7 +26,7 @@ export default function ProgettiGrid({ progetti }: { progetti: ProgettoItem[] })
 
   const filtered = activeFilter === 'Tutti'
     ? progetti
-    : progetti.filter((p) => p.settore === activeFilter)
+    : progetti.filter((p) => p.lavorazione && p.lavorazione.includes(activeFilter))
 
   return (
     <section style={{ backgroundColor: 'var(--color-bg)', paddingBottom: 'var(--space-24)' }}>
@@ -112,16 +111,11 @@ export default function ProgettiGrid({ progetti }: { progetti: ProgettoItem[] })
                   </div>
                   <div className="flex flex-col gap-3 p-5 flex-grow">
                     <div className="flex gap-2 flex-wrap">
-                      {p.settore && (
-                        <span className="font-body font-medium uppercase" style={{ fontSize: '9px', letterSpacing: '0.2em', color: 'var(--color-primary-light)' }}>
-                          {p.settore}
+                      {p.lavorazione && p.lavorazione.map((tag) => (
+                        <span key={tag} className="font-body font-medium uppercase" style={{ fontSize: '9px', letterSpacing: '0.2em', color: 'var(--color-primary-light)' }}>
+                          {tag}
                         </span>
-                      )}
-                      {p.lavorazione && (
-                        <span className="font-body font-medium uppercase" style={{ fontSize: '9px', letterSpacing: '0.2em', color: 'var(--color-primary-light)' }}>
-                          {p.settore ? '| ' : ''}{p.lavorazione}
-                        </span>
-                      )}
+                      ))}
                     </div>
                     <h3 className="font-display" style={{ fontSize: '20px', fontWeight: 700, color: 'var(--color-text)', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
                       {p.titolo}
