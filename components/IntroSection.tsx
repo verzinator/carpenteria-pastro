@@ -67,7 +67,7 @@ export default function IntroSection() {
             }}
           >
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuADb6OIRuxgzxq_SFNHuAj9-GvN9bAeH1zIQvJMgOC4ggbz5ajgkUa1fdXtC7cweldK2XBiroYw5eJkYjvbEKrgBdhK3MJD4L8bA4pgpPgv9pfFuDaTlkth5lbj7PcPoLPCy77ohoR67CzfWGb_GT3TIOGxe29IwVIwbPRSuJShPsmKlvJ3L_XsMarAy-j2wMnPfIEqhpqyQxkcw5x1lXBwMUTKxUAl1zX_FHT6VKTcHtcMOuXI90QPYfjErHTBdXTB7LCQtTa29g"
+              src="/immagini-pastro/Pastro_dettaglio 2.png"
               alt="Interno stabilimento robotizzato Pastro"
               fill
               className="object-cover transition-all duration-1000 grayscale brightness-75 contrast-125 group-hover:grayscale-0 group-hover:brightness-100"

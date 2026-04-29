@@ -9,14 +9,14 @@ const reasons = [
     n: '01',
     title: 'Lavorazioni di Grandi Dimensioni',
     body: 'Macchine piegatrici e per il taglio per lamiere, fino a 13 metri di lunghezza lineare.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCBPmWeUItkSRfI--O_g8C4c9cdHrRYRk9h-xWwT8IIWnPhJ8iOKuWcZHJUbI5evviyG3Rqzv_lsbOjnZePxyGwqrGkU7in0dW1geIL-D7S1xEfxqSw8g2g_x9R5WkADjJdMIgXhEAn3Xfka6wcTj9NTzNC0Y1Jzw9XvFYyJXJlm6JYdMT7aQfZgBxlQQ8jXHM1kmENR6YnOcLAJYBMFDOC6C79NLAMZwJWaMJH5mUQy4rIlNSD5MLIjViU_y3CJiHKKMHtyHn_zg',
-    alt: 'Lavorazioni metalliche su grandi dimensioni',
+    img: '/immagini-pastro/Pastro_grandi dimensioni capannone.png',
+    alt: 'Lavorazioni metalliche grandi dimensioni Pastro carpenteria',
   },
   {
     n: '02',
     title: 'Flessibilità Produttiva',
     body: 'Capacità dello staff organizzativo di fornire risposte in tempi estremamente rapidi, 48 ore dall\'ordine.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMtOCI3blxtGR3pRsEnvNRSBOgZzMP_7rCDqByID8guySpUJATNRWtt-kLIV2SaXeU0aOnDlzuffz_OkowOkPRdUTBwsTivj1N0G-fMOdcZwfZjn1g82kFQPbbf195BOx-dQJGEVauJcsCXUW6BPL8u6DDzyn97MVMXLL5qPc6S2ZywTzrHED-yFMqu33NdnOXfioUkWwj8T2P3oki-9Yt3ASPZypdFTgESyzTvIV8-fk2xVOtJirwRAj8sNbCLVQiRVwEZU5hyQ',
+    img: '/immagini-pastro/Pastro_lavorazione grandi dimensioni e pagina settori.png',
     alt: 'Produzione flessibile carpenteria metallica',
   },
   {
@@ -30,8 +30,8 @@ const reasons = [
     n: '04',
     title: 'Consulenza Tecnica',
     body: 'Il nostro ufficio tecnico analizza i tuoi disegni e propone ottimizzazioni per ridurre costi e tempi.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAXpGBAX9J_RLvckyG_3GSoU6lpv_kb4WXfnOdn0D4zH2I9DnzDyx7nqmSYHX8R1CljvcaUI9jhGVudlpiGtTu7YpHpy-IsrOImH5Q_ORsSb3IV-p8FzKsCPdf0DSoNFFys8yV5BKSNfQwwbbX0VTzPlh3lw05W6T-wcIceD6En6_9rIxWkrnHtqxMqzgLYK2RzpHGe8oHK8BPI5GH7qHv221F2ubMkL-M3WK_0xgcnbxnyLxY3S5sfrl5gWcKuwiSq8vXQFnF2Zw',
-    alt: 'Consulenza tecnica ufficio disegno',
+    img: '/immagini-pastro/Pastro_progetto.png',
+    alt: 'Consulenza tecnica Pastro carpenteria metallica',
   },
   {
     n: '05',
