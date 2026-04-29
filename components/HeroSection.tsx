@@ -9,15 +9,22 @@ export default function HeroSection() {
       style={{ minHeight: '100svh' }}
     >
       {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgs4UwDtWi9n7V2vYOxLJ7p-V5yRM1BzGSEBJ_kqOmzAE2jZm6yYCfwcxqfcRQd1b9xXIFYsIR56c68OSAb29ZVHpjf7nBzA_jnRUfVFPhxMyh58Mqsx70lPCJiMkRwZbbX1x1VisibMD4eD6RWWGo-SlMolX8LlzWNIb3vvvg3HEb8AMd59W2yZNToP75kph9spc32mgYvh-M8nKWaqack0hvA2zA19CcPIzx1uqyy3A_-NSCvDGls2BYtWkzpvgvUXVb7Xk6KQ"
-          alt="Taglio laser su lamiera industriale ad alta precisione"
-          fill
-          priority
-          className="object-cover"
-          style={{ filter: 'brightness(0.45) contrast(1.1)' }}
-        />
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            filter: 'brightness(0.45) contrast(1.1)',
+            display: 'block',
+          }}
+        >
+          <source src="/immagini-pastro/pastro-video-home.mp4" type="video/mp4" />
+        </video>
         {/* Gradient overlay */}
         <div
           className="absolute inset-0"
