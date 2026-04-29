@@ -6,130 +6,54 @@ import { useState } from 'react'
 const settori = [
   {
     num: '01',
-    title: 'Movimento Terra e Costruzioni',
+    title: 'Macchinari industriali per sollevamento',
     description:
-      'Carpenteria robusta per macchine e attrezzature da cantiere e lavorazione della pietra.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBaDfsL-3KGfeKgj8Qo7K9uKIwYQCBWEw4wQAT305WrULYXytdNToL9EoSq1UfQbpo8cMy_hSk-b9gMKTgJn85Wlh8ZmLQpCauDYOVKJhUd-1KN9i921KqSJQWnTwmXNEFAgAibTrRYrIbPg5wZp9uLsd8dvWhAWUHB-9YWXh98ykOnzFLH9Gxby8dPamTE3099UUYaBIy8xIrtuqLHLg_wdL2w-UOxr5xnuhNHcssQH0BDY_PbWOtcmiKPbhPVeCMccmzMyAT-wg',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuA5bXdAqBr_N0pcCHHGZU8U1LvJX4TLrCfD9qZBjhZS1d--xnyeZmASr642yIAcqK7SBwRm-bBKJQpbeP-y2VVu-ecv_aLhWF6EhsdG_HkoRnGPdXs74sy66pLwromSHK6lV98kbVhZnHhA0dCmkTlunM3kskMwfPS5s1x2gU7VyeBl9dvZlvcNd2jRO1MqJLmNbZQsxDPnC2VHH2d6MineQZj6jjCEPLb2SuLid4Er7G_ak3lS28iECvnmMFpIYeyf5LEF2WKf_A',
-    ],
+      'Carpenteria di precisione per sistemi di sollevamento e movimentazione industriale.',
+    img: '/immagini-pastro/Macchinari industriali per sollevamento.jpg',
+    alt: 'Macchinari industriali sollevamento Pastro carpenteria',
     topics: [
-      {
-        label: 'Macchine e attrezzature per movimento terra',
-        body: '',
-      },
-      {
-        label: 'Macchine e attrezzature per costruzioni',
-        body: '',
-      },
-      {
-        label: 'Perforatrici e carotatrici per cave di pietra',
-        body: '',
-      },
-      {
-        label: 'Macchinari e attrezzature per cave e lavorazione della pietra',
-        body: '',
-      },
+      { label: 'Gru e sistemi di movimentazione', body: '' },
+      { label: 'Strutture di supporto per paranchi', body: '' },
+      { label: 'Telai e travature metalliche', body: '' },
     ],
   },
   {
     num: '02',
-    title: 'Infrastrutture e Strutture Metalliche',
+    title: 'Macchine movimento terra',
     description:
-      'Strutture metalliche saldate per infrastrutture critiche e grandi portate.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBaDfsL-3KGfeKgj8Qo7K9uKIwYQCBWEw4wQAT305WrULYXytdNToL9EoSq1UfQbpo8cMy_hSk-b9gMKTgJn85Wlh8ZmLQpCauDYOVKJhUd-1KN9i921KqSJQWnTwmXNEFAgAibTrRYrIbPg5wZp9uLsd8dvWhAWUHB-9YWXh98ykOnzFLH9Gxby8dPamTE3099UUYaBIy8xIrtuqLHLg_wdL2w-UOxr5xnuhNHcssQH0BDY_PbWOtcmiKPbhPVeCMccmzMyAT-wg',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuA5bXdAqBr_N0pcCHHGZU8U1LvJX4TLrCfD9qZBjhZS1d--xnyeZmASr642yIAcqK7SBwRm-bBKJQpbeP-y2VVu-ecv_aLhWF6EhsdG_HkoRnGPdXs74sy66pLwromSHK6lV98kbVhZnHhA0dCmkTlunM3kskMwfPS5s1x2gU7VyeBl9dvZlvcNd2jRO1MqJLmNbZQsxDPnC2VHH2d6MineQZj6jjCEPLb2SuLid4Er7G_ak3lS28iECvnmMFpIYeyf5LEF2WKf_A',
-    ],
+      'Soluzioni strutturali robuste per escavatori, bulldozer e macchine da cantiere.',
+    img: '/immagini-pastro/macchine-movimento-terra.jpg',
+    alt: 'Macchine movimento terra Pastro carpenteria metallica',
     topics: [
-      {
-        label: 'Strutture metalliche per ponti, strade, trafori e tunnel',
-        body: '',
-      },
-      {
-        label: 'Tralicci e piloni in metallo',
-        body: '',
-      },
+      { label: 'Benne e accessori per escavatori', body: '' },
+      { label: 'Strutture per macchine movimento terra', body: '' },
+      { label: 'Rinforzi e componenti strutturali', body: '' },
     ],
   },
   {
     num: '03',
-    title: 'Trasporto Industriale e Veicoli Speciali',
+    title: 'Macchine lavorazioni pietra',
     description:
-      'Carpenteria specializzata per autocarri, veicoli eccezionali e rimorchi.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCE-i-wo2ZrYianVrL6MnocF7BxVDGxEA1D1xjegUJrI6DCVtnVDnoKrMlu5vM9YghVuyZ5NnjdO_aosBDidtG-10MPD540hx2TxgQNHYEiD5KPPtRiNHY2wYsyCAdW-9EEyKE1Vt_cnTxiWW1J7UjNBEkDoOjdALMki5XTBpCktT75A_xpGSGdbZJq1HyoRIjO-gEVmdxWkm9WmFT8DmO6ypM600EwRQgpywEeUNFT3heFTSenJBpGzp0wUzr7xKGvBZ8lop4gXw',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAMtOCI3blxtGR3pRsEnvNRSBOgZzMP_7rCDqByID8guySpUJATNRWtt-kLIV2SaXeU0aOnDlzuffz_OkowOkPRdUTBwsTivj1N0G-fMOdcZwfZjn1g82kFQPbbf195BOx-dQJGEVauJcsCXUW6BPL8u6DDzyn97MVMXLL5qPc6S2ZywTzrHED-yFMqu33NdnOXfioUkWwj8T2P3oki-9Yt3ASPZypdFTgESyzTvIV8-fk2xVOtJirwRAj8sNbCLVQiRVwEZU5hyQ',
-    ],
+      'Carpenteria specializzata per macchine e attrezzature di estrazione e lavorazione pietre.',
+    img: '/immagini-pastro/macchine-lavorazioni-pietra.jpg',
+    alt: 'Macchine lavorazioni pietra Pastro carpenteria',
     topics: [
-      {
-        label: 'Autocarri',
-        body: '',
-      },
-      {
-        label: 'Veicoli per trasporti eccezionali',
-        body: '',
-      },
-      {
-        label: 'Rimorchi per autocarri e trattrici stradali',
-        body: '',
-      },
+      { label: 'Telai per perforatrici e seghe', body: '' },
+      { label: 'Strutture di carico e pressione', body: '' },
+      { label: 'Componenti per laminatoi e magli', body: '' },
     ],
   },
   {
     num: '04',
-    title: 'Energia e Impiantistica Industriale',
+    title: 'Linee di automazione industriale',
     description:
-      'Impianti e serbatoi per energia, stoccaggio e impiantistica specializzata.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBUHT-tzDuf0dH-xfsiMGcTOGi3NK-I_QTZC_dUSoq_ofRiVeR9XVfsX5vzEpDGp6Hr8eZIUeJHecpcW3FXsrCfooSmJbJs5opjhvPhOys4X0iIiI_nwcuUVRhDofkkfmG4KHVLeYhU0sIWDy8OMf4o-XU9n-Y_2fU-XXVqaouKrQcsFE-WtMS_m293vuN5rOgHzlgoobE7UFR_MmdOvIHO7gnOQRxRV-p0M6Z8_s-Fay4lA9YEi1f9CXqhi3-UZIUimRGWarcDbQ',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAp7DKHPPvRyujibLD5T7d3U-us_CbMDQGPq810IOzFF_qqfrF6igoqO_XBECYWdjFM6NQf5XVqKu5DezdEYO7Ks8CM7D64HsXnsfRgzXvegQR9m2I8B4_vFMS3rr67mdNZurJha5D-mspgLeeOG-nDygGLGIO5lpRJJ5rdtdHvv-un5muvfMop_ZOq5sBrzlRfUDzfYpHDhNDskL552emYksN01NW2RNOlhvzdHyHagcUCC16aVZaPcElwVQa6V2wXrjnHt8OLkg',
-    ],
+      'Impianti e strutture per catene di montaggio, robot industriali e automazione.',
+    img: '/immagini-pastro/linee-di-automazione-industriale.jpg',
+    alt: 'Linee automazione industriale Pastro carpenteria',
     topics: [
-      {
-        label: 'Impianti per la produzione di biogas',
-        body: '',
-      },
-      {
-        label: 'Impianti di deposito e stoccaggio di prodotti petroliferi',
-        body: '',
-      },
-      {
-        label: 'Impianti di deposito e stoccaggio di gas',
-        body: '',
-      },
-      {
-        label: 'Serbatoi e vasche in metallo',
-        body: '',
-      },
-      {
-        label: 'Serbatoi metallici per gas',
-        body: '',
-      },
-      {
-        label: 'Contenitori in metallo per liquidi',
-        body: '',
-      },
-      {
-        label: 'Serbatoi per oleodinamica',
-        body: '',
-      },
-    ],
-  },
-  {
-    num: '05',
-    title: 'Agricoltura e Macchinari Agricoli',
-    description:
-      'Componenti strutturali per macchine e attrezzature agricole.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBUqBxiSgStyztx9cfVGphQZ2RVol_WT2ObK8nE4nJrJDenPq604EMEuWzJh2xDqLU0WzKQ_E7OjoWn1wY9AvahQG-o-ocNE0cJtuFOaOO4Kf6Mm0A_Ji9YTCNfBUkM8cu0ys9APymDisaY4k3iwRPzP5lugT7a2DMMlIk0Y9UIAL-aR__PJYwXC9fnAD90pwDkAt2-uA34XPa83RDO51iN66lKd4Sg_M5QHLlY3d6psXNt8OWTYFOMGRag8Cu2-IKsngANXwqpQw',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCDBd8t-OMrrcbVbyc6pRvQKjoBrCas2-sQR2dD3JNAVBuNPJlrX_9NDGlrvMLL22YGHxSatXc3FfPtD0sRq7Zr_WnhvfkvpbbUTO0sL_8Azqsc7_T-VwZ893U3BZeCRyxCCXMqOP4XS7j67h4JxfhZARp_wCcfkGDl18fPH73zJ65YKr7IxVbxvZREmE0A-zjxDE7y3_E8C4r74e-0fpmkp7l_0CqB3j5CHyATOHRrul5JLKswLQmwemIz_AeOxY6Ej-dHZAS-sw',
-    ],
-    topics: [
-      {
-        label: 'Macchine e attrezzature per l\'agricoltura e la silvicoltura',
-        body: '',
-      },
+      { label: 'Telai strutturali per robot industriali', body: '' },
+      { label: 'Passerelle e piattaforme di produzione', body: '' },
+      { label: 'Componenti di interfaccia e supporto', body: '' },
     ],
   },
 ]
@@ -139,17 +63,6 @@ function AccordionItem({ s, isOpen, onToggle }: {
   isOpen: boolean
   onToggle: () => void
 }) {
-  const [imgIndex, setImgIndex] = useState(0)
-
-  const prev = (e: React.MouseEvent) => {
-    e.stopPropagation()
-    setImgIndex((p) => (p - 1 + s.images.length) % s.images.length)
-  }
-  const next = (e: React.MouseEvent) => {
-    e.stopPropagation()
-    setImgIndex((p) => (p + 1) % s.images.length)
-  }
-
   return (
     <div
       style={{
@@ -247,11 +160,11 @@ function AccordionItem({ s, isOpen, onToggle }: {
           className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
           style={{ padding: '32px 40px 32px 40px' }}
         >
-          {/* Left column — image + nav */}
-          <div className="flex flex-col gap-3">
+          {/* Left column — image only */}
+          <div>
             {/* Image */}
             <div
-              className="relative overflow-hidden"
+              className="relative overflow-hidden group"
               style={{
                 height: 'clamp(240px, 30vw, 380px)',
                 borderRadius: 'var(--radius-md)',
@@ -259,48 +172,20 @@ function AccordionItem({ s, isOpen, onToggle }: {
               }}
             >
               <Image
-                src={s.images[imgIndex]}
-                alt={s.title}
+                src={s.img}
+                alt={s.alt}
                 fill
-                className="object-cover transition-opacity duration-500"
+                className="object-cover grayscale brightness-75 transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100"
                 sizes="(max-width: 768px) 100vw, 45vw"
               />
-            </div>
-
-            {/* Prev / Next buttons */}
-            <div className="flex gap-2 justify-end">
-              <button
-                onClick={prev}
-                className="flex items-center justify-center transition-all duration-200 hover:opacity-80"
+              {/* Accent overlay at 24% opacity */}
+              <div
+                className="absolute inset-0 pointer-events-none"
                 style={{
-                  width: '36px',
-                  height: '36px',
-                  borderRadius: 'var(--radius-sm)',
-                  backgroundColor: 'var(--color-surface-3)',
-                  border: '1px solid var(--color-border)',
-                  color: 'var(--color-text)',
-                  fontSize: '15px',
-                  cursor: 'pointer',
+                  backgroundColor: 'var(--color-accent-silver)',
+                  opacity: 0.24,
                 }}
-              >
-                ←
-              </button>
-              <button
-                onClick={next}
-                className="flex items-center justify-center transition-all duration-200 hover:opacity-80"
-                style={{
-                  width: '36px',
-                  height: '36px',
-                  borderRadius: 'var(--radius-sm)',
-                  backgroundColor: 'var(--color-surface-3)',
-                  border: '1px solid var(--color-border)',
-                  color: 'var(--color-text)',
-                  fontSize: '15px',
-                  cursor: 'pointer',
-                }}
-              >
-                →
-              </button>
+              />
             </div>
           </div>
 
