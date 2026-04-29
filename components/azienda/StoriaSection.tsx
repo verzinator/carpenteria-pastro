@@ -8,28 +8,28 @@ const milestones = [
     title: 'Fondazione',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.',
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2ADuAWHtWE90SDZSCrB04s-wq--eMmwKkwgfVOIbaKcapGbi5K_FFOe1ld4eDiBCFsTVngTf_SbOkx9K5zCt_4jiw0QzfQUgPDEi7KDjh1KcU_YQAu276YEcJybaxTdHmVfyDwL06tTWoSXMQh4cYMRz9Nr5U82DKk8veTtlUhJLVdP8LiR6Z369oCLEhDCbK1FCiqXwpOt2XpZfYcQv03vC1YsZ2g6VczJV-wxLLQXf1-z7BkyFq6pRAcnME25mb-DvIgzQ_Ng',
-    alt: 'Officina artigianale del 1994',
+    alt: 'Officina Pastro fondazione 1994 carpenteria',
   },
   {
     year: '2005',
     title: 'Espansione',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.',
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBWS3JokfGTEX-6d8XRTYcr32-GrhKKLjZSbBxX9hs-20CIShrboylZ75O8Ii2ac8txFPzRfq6rMjYVXgzpn4Z8vpG0RDc68uYVsef4AfNbsYVIgELzlAfygVl5btXxOSTjzB0LnAyI3u2x7NSYPEb7mwFhQADFnLBcl2r3UYD66p037r9KdzyC-_v3SLKTatzmJMgfBgyfCJUFQ1zBQtsC0EYUsj6BX70oYBhVEMfW82LyCRjLQD3uwtXBC5yH7ITEV69mHtlCuQ',
-    alt: 'Stabilimento industriale 5000mq',
+    alt: 'Stabilimento Pastro industriale carpenteria 2005',
   },
   {
     year: '2015',
     title: 'Hi-Tech',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.',
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCE-i-wo2ZrYianVrL6MnocF7BxVDGxEA1D1xjegUJrI6DCVtnVDnoKrMlu5vM9YghVuyZ5NnjdO_aosBDidtG-10MPD540hx2TxgQNHYEiD5KPPtRiNHY2wYsyCAdW-9EEyKE1Vt_cnTxiWW1J7UjNBEkDoOjdALMki5XTBpCktT75A_xpGSGdbZJq1HyoRIjO-gEVmdxWkm9WmFT8DmO6ypM600EwRQgpywEeUNFT3heFTSenJBpGzp0wUzr7xKGvBZ8lop4gXw',
-    alt: 'Taglio laser a fibra CNC',
+    alt: 'Taglio laser Pastro CNC carpenteria',
   },
   {
     year: '2023',
     title: 'Industria 4.0',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.',
     src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop',
-    alt: 'Digital twin fabbrica',
+    alt: 'Digital twin Pastro industria 4.0 carpenteria',
   },
 ]
 

@@ -5,37 +5,37 @@ const settori = [
     name: 'Automotive',
     items: ['Linee di assemblaggio', 'Strutture portanti robot', 'Telai di precisione'],
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAp7DKHPPvRyujibLD5T7d3U-us_CbMDQGPq810IOzFF_qqfrF6igoqO_XBECYWdjFM6NQf5XVqKu5DezdEYO7Ks8CM7D64HsXnsfRgzXvegQR9m2I8B4_vFMS3rr67mdNZurJha5D-mspgLeeOG-nDygGLGIO5lpRJJ5rdtdHvv-un5muvfMop_ZOq5sBrzlRfUDzfYpHDhNDskL552emYksN01NW2RNOlhvzdHyHagcUCC16aVZaPcElwVQa6V2wXrjnHt8OLkg',
-    alt: 'Linee di produzione automotive',
+    alt: 'Linee di produzione automotive Pastro carpenteria',
   },
   {
     name: 'Food & Beverage',
     items: ['Serbatoi in acciaio INOX', 'Nastri trasportatori', 'Sistemi di lavaggio'],
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVXfi5F6ACchgGdf2SA38Qp-R4S6BKzdU0wRKfOOnpmebNiQHdHNe0x6aDMy9wZ7VzLIhtx_gzvErzpa7G0xaar0xfztjk_HI8AhC88AjV44XlAMN3szFmzObr7DXsBRctkoPllZXlEROKweq4VQeQnAXmU0ZicTxQY7tZDwBAULTUfhJJ1sKnHE5BKVDThZr4ZaP5peNh0iyJkl65eBZQLtZQW42Pft6xd2PYEcoqFqUYgjF8_kvF-oAtLSN15g2NFiW6X1Mgug',
-    alt: 'Macchinari in acciaio inox per il settore alimentare',
+    alt: 'Macchinari Pastro acciaio inox settore alimentare carpenteria',
   },
   {
     name: 'Agriculture',
     items: ['Scocche macchine agricole', 'Bracci telescopici', 'Attrezzature da fienile'],
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBzIISEJH1FuemTjO_0QtGhryDvhE_ltWdC6895yq5GZxI2MKYFjT2pnNv9S9U6Bb5p6aiNul6fY3m4iSr_aa7Vyov8yT9JWUgY9J2UWT0PrCZcspsY1oYiaRopFowRG5myywnJhHjkC7x6HMYF8L6xRoVwSM7gx-GyGCT8hytpmepWPNxD1b1WkZeQAJ7yJNyUo0j0j6uSj8AvpsNX-We2zON8Ju7laqVPtTeim6mrlyYrwKBjIYLq31nNYTh3aNbX8DtuGJZTTg',
-    alt: 'Componenti per macchinari agricoli',
+    alt: 'Componenti Pastro macchinari agricoli carpenteria metallica',
   },
   {
     name: 'Architectural',
     items: ['Rivestimenti di facciata', 'Scale monumentali', 'Strutture di design'],
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDx-u6-9i-jAmFDZ-322QjkOgJwQmXO-TW1uC494GLRIuNugmGIJxr3HRJ8I9UpDf3kal6tq91aNuBUH4sd_q94M_SG4iHnxo26bSxRCk5aLuD8AHm-KVG9zVe0eMOH0O6HddQPXLkGSdrAkUPprCUsy6PARJz6W95ZgO9cx97YAmeLPU96V_IvjoO53LTAsv0ISp45VVKRKLAuO0g8zo2u2zxgW3j9_irdgYK961n1KOOzI20Ots6GRNuPS00VIgFLaw7N7tNnsQ',
-    alt: 'Facciata architettonica in metallo',
+    alt: 'Facciata architettonica Pastro carpenteria metallica',
   },
   {
     name: 'Energy',
     items: ['Sostegni per fotovoltaico', 'Componenti per eolico', 'Cabine elettriche'],
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCAYexID0czG6XQHazs-1XWU5rSYXEH5flxUU09YMI-ZmAWd9UTo008j6-sck7t4w4NyZHkievYug3w2BIANm4VM2667rPIAB4WlWo9fOX8sDYIKNHMnob6vGcX5U4M4KqLeATfvOJWSdFiqnyul4Oi4HwZu77y557CsNEdVmU0wPlCj71wpRlgIrcIB6fXN7Fejcjc8N5G65g25RVPsRDlIjJ_Mq8Sx0t-ArE5S7-cp3B6KJDzuZmoMTcIgex1UmNHdhWM7_if2A',
-    alt: 'Infrastrutture energetiche in metallo',
+    alt: 'Infrastrutture energetiche Pastro carpenteria metallo',
   },
   {
     name: 'Machinery',
     items: ['Incastellature pesanti', 'Protezioni antinfortunistiche', 'Basamenti macchina'],
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwnWZGvFPMIiiitO01-7orKcrX7KQiyny-er0kZKtHmZARbql6B-ZRpkbkEfFVNoH4S3ZOwl7-qPEyaWLhA9HY4MjwIuONOHV2Qqt-lew0q_K9Z6DYdqnqfRdamVs9cWrAap6dKtSnp1gOsxuPlgcC-59trNhwOLoua8ikI381VIBmlKcnX4V6x-3zlot6WJQMHcVSVG2RQ7pk76Ux5tC0vtqvYOU9lcDZI3txCss6wFSrFSS8LO8_IX3iJx8GOBw80HkzY1MGpw',
-    alt: 'Macchinari industriali pesanti',
+    alt: 'Macchinari industriali pesanti Pastro carpenteria',
   },
 ]
 
