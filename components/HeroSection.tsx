@@ -30,7 +30,7 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(90deg, var(--color-bg) 0%, rgba(10,11,13,0.75) 55%, rgba(10,11,13,0.1) 100%)',
+              'linear-gradient(90deg, var(--color-bg) 0%, rgba(10,11,13,0.6) 55%, rgba(10,11,13,0.05) 100%)',
           }}
         />
         {/* Blueprint grid */}
