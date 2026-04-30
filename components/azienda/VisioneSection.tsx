@@ -88,8 +88,8 @@ export default function VisioneSection() {
           {/* Image */}
           <div className="w-full lg:w-1/2 relative min-h-[440px] overflow-hidden" style={{ borderRadius: 'var(--radius-sm)' }}>
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDB1SqaAYGuf8iZSZJwxhaF5-0b8WX_fwSJbN-JznjBb0D32Qoxq88YiN_C6UAPUOi-qpn9o8jysZA5Nks-xlcvI1oqdSLgbWfV5RQqFxxLfhOry5jSSrwtIKechta-XY2GsqHxTGg2lu7BV_E2vBSViKQ3X1ndZ2pFAaarbOWbIdhIeaWZ8d07IRhq-JRzMxPq7R1QDeo4CgCNuG8KMWB4DgNl2N62hSN3k0hd2Q84zvTvOEIxAvtvkTDzIH4D1vKsegEes27zA"
-              alt="Stabilimento produttivo Pastro"
+              src="/immagini-pastro/Pastro_lamiere grandi dimensioni.png"
+              alt="Lavorazioni lamiere grandi dimensioni Pastro carpenteria"
               fill
               className="object-cover"
               style={{ filter: 'brightness(0.7) contrast(1.1)' }}
