@@ -1,8 +1,10 @@
 const stats = [
   { value: '30+', label: 'Anni di Esperienza' },
   { value: '13m', label: 'Capacità di Piegatura' },
-  { value: '4cm', label: 'Spessore lavorazione lamiere' },
-  { value: '48h', label: 'Tempo max risposta' },
+  { value: '15mm', label: 'Spessore Lamiera Taglio Laser' },
+  { value: '60mm', label: 'Spessore Taglio Plasma' },
+  { value: '48h', label: 'Tempo max Risposta' },
+  { value: '600t', label: 'Capacità Presso Piegatrice' },
 ]
 
 export default function StatsStrip() {
@@ -16,7 +18,7 @@ export default function StatsStrip() {
       className="py-16"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
           {stats.map((stat) => (
             <div
               key={stat.label}

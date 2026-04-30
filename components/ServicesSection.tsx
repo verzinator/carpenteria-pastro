@@ -5,27 +5,27 @@ import { Cpu, Ruler, Zap, Puzzle } from 'lucide-react'
 const services = [
   {
     icon: Cpu,
-    title: 'Taglio Laser',
+    title: 'Taglio Laser e Punzonatura',
     description:
-      'Soluzioni di taglio laser ad alta precisione su lamiere e profili metallici fino a 40mm di spessore, con tolleranze di ±0,1mm.',
+      'Processo di taglio ad alta precisione che utilizza tecnologia laser per dividere lamiere e profili metallici. Consente tagli netti e precisi minimizzando le deformazioni termiche del materiale.',
   },
   {
     icon: Ruler,
     title: 'Piegatura',
     description:
-      'Piegatura a freddo su presse piegatrici CNC fino a 13 metri di lunghezza utile.',
+      'Formatura di lamiere metalliche attraverso presse piegatrici CNC che applicano forza controllata per creare angoli e forme complesse. Processo reversibile che mantiene le proprietà meccaniche.',
   },
   {
     icon: Zap,
-    title: 'Saldatura',
+    title: 'Calandratura',
     description:
-      '5 postazioni di saldatura a filo, …. (testo completo da aggiornare)',
+      'Laminazione di lamiere metalliche mediante cilindri per regolare spessore e planarità. Processo essenziale per ottenere superfici uniformi con proprietà meccaniche omogenee.',
   },
   {
     icon: Puzzle,
-    title: 'Assemblaggio',
+    title: 'Saldatura',
     description:
-      'Ampi spazi dedicati all\'assemblaggio di lavorazioni complesse e di grandi dimensioni, per garantire una consegna puntale con la massima qualità.',
+      'Unione di componenti metallici mediante fusione con sorgenti di calore controllato. Crea giunzioni resistenti e durevoli mantenendo l\'integrità strutturale dell\'insieme.',
   },
 ]
 
