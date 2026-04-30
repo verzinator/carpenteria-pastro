@@ -37,7 +37,7 @@ export default function IntroSection() {
               letterSpacing: '-0.02em',
             }}
           >
-            Tecnologie moderne con radici solide.
+            Tecnologia avanzata per la carpenteria metallica industriale.
           </h2>
 
           <p
@@ -49,8 +49,10 @@ export default function IntroSection() {
               fontWeight: 300,
             }}
           >
-            Da oltre tre decenni affianchiamo aziende manifatturiere nella realizzazione di
-            lavorazioni su disegno, garantendo continuità produttiva, precisione e affidabilità.
+            Da oltre tre decenni, Pastro rappresenta l'eccellenza nella lavorazione dei
+            metalli. Il nostro stabilimento è equipaggiato con macchinari di ultima
+            generazione per garantire tolleranze millimetriche su ogni componente, dal
+            prototipo alla produzione in serie.
           </p>
         </div>
 
