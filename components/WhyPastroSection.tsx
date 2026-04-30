@@ -23,7 +23,7 @@ const reasons = [
     n: '03',
     title: 'Rispetto Tempistiche e Scadenze',
     body: 'Pianificazione produttiva avanzata e sistema di priorità per garantire la puntualità delle consegne.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAceCXbqO-PZXg_PRwjMWqaHTtDXRx6IcrPO5Cygn33o508lU3Xs7T4r8afeRilzLY0vcrEJkNe4NL6H7SUHz31_w_J0fkxKx1F0KUwC4nBNBE6qHUoI93EbWN5rJztXYINj-0tu2m63kmlZGK700zJLqPe4QeAOMJ50CA3B6AuozmfYFXV_gez2pNqOuc1hegfoh6OxsyP-KOI0xjGhOvU2TzVMoKDmUMymakFMqVpw5IGS3cW9SbgemgfX_dkTCU9h3L-F_XMqA',
+    img: '/immagini-pastro/Pastro_dettagli lavoro.png',
     alt: 'Consegne puntuali carpenteria',
   },
   {
@@ -37,7 +37,7 @@ const reasons = [
     n: '05',
     title: 'Esperienza',
     body: 'Consolidata in oltre 30 anni di attività tramandata in ogni singolo settore di lavorazione.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADb6OIRuxgzxq_SFNHuAj9-GvN9bAeH1zIQvJMgOC4ggbz5ajgkUa1fdXtC7cweldK2XBiroYw5eJkYjvbEKrgBdhK3MJD4L8bA4pgpPgv9pfFuDaTlkth5lbj7PcPoLPCy77ohoR67CzfWGb_GT3TIOGxe29IwVIwbPRSuJShPsmKlvJ3L_XsMarAy-j2wMnPfIEqhpqyQxkcw5x1lXBwMUTKxUAl1zX_FHT6VKTcHtcMOuXI90QPYfjErHTBdXTB7LCQtTa29g',
+    img: '/immagini-pastro/Pastro_tecnologia.png',
     alt: 'Esperienza storica carpenteria metallica',
   },
 ]
