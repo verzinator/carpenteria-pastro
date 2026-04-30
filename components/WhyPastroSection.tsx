@@ -9,7 +9,7 @@ const reasons = [
     n: '01',
     title: 'Lavorazioni di Grandi Dimensioni',
     body: 'Macchine piegatrici e per il taglio per lamiere, fino a 13 metri di lunghezza lineare.',
-    img: '/immagini-pastro/Pastro_tecnologia.png',
+    img: '/immagini-pastro/Pastro_grandi dimensioni capannone.png',
     alt: 'Lavorazioni metalliche grandi dimensioni Pastro carpenteria',
   },
   {
