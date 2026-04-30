@@ -24,7 +24,7 @@ export default function AziendaHero() {
             letterSpacing: '0.2em',
           }}
         >
-          Lorem Ipsum Dolor Sit Amet
+          Chi Siamo
         </div>
 
         <h1
@@ -52,8 +52,8 @@ export default function AziendaHero() {
             fontWeight: 300,
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Da oltre tre decenni affianchiamo aziende manifatturiere nella realizzazione di
+          lavorazioni su disegno, garantendo continuità produttiva, precisione e affidabilità.
         </p>
 
       </div>
