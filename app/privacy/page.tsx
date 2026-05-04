@@ -13,7 +13,7 @@ const sections = [
     content: `Carpenteria Pastro S.r.l., con sede legale in Via del Lavoro, 8 — 31050 Vedelago (TV), nella persona del legale rappresentante, è il Titolare del trattamento dei dati personali raccolti tramite il presente sito web.
 
 Recapiti:
-• Email: info@carpenteriapastro.it
+• Email: ordini@carpenteriapastro.it
 • Telefono: 0423-401219
 • Fax: 0423-709147`,
   },
@@ -81,7 +81,7 @@ I dati non sono trasferiti fuori dall'Unione Europea, salvo verso paesi che gara
 • Revocare il consenso in qualsiasi momento, senza pregiudicare la liceità del trattamento precedente
 
 Per esercitare i propri diritti è possibile contattare il Titolare tramite:
-• Email: info@carpenteriapastro.it
+• Email: ordini@carpenteriapastro.it
 • Posta: Via del Lavoro, 8 — 31050 Vedelago (TV)
 • Telefono: 0423-401219
 

@@ -104,7 +104,7 @@ Via del Lavoro, 8
 31050 Vedelago (TV) — Italia
 
 Contatti per richieste sulla privacy e i cookie:
-• Email: info@carpenteriapastro.it
+• Email: ordini@carpenteriapastro.it
 • Telefono: 0423-401219
 • Fax: 0423-709147
 

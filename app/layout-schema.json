@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://carpenteriapastro.it/#local-business",
+      "name": "Carpenteria Pastro SRL",
+      "description": "Carpenteria metallica industriale di precisione con oltre 30 anni di esperienza. Specializzati in lavorazioni di grandi dimensioni, taglio laser, piegatura, saldatura e calandratura.",
+      "url": "https://carpenteriapastro.it",
+      "telephone": "+39-XXX-XXXXXX",
+      "email": "ordini@carpenteriapastro.it",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Veneto, Italia",
+        "addressRegion": "Veneto",
+        "addressCountry": "IT"
+      },
+      "sameAs": [],
+      "image": "https://carpenteriapastro.it/pastro-logo.png",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "GeoShape",
+        "box": "45.5 11.5 45.7 12.5"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://carpenteriapastro.it/#organization",
+      "name": "Carpenteria Pastro SRL",
+      "url": "https://carpenteriapastro.it",
+      "logo": "https://carpenteriapastro.it/pastro-logo.png",
+      "description": "Partner tecnico specializzato in lavorazioni metalliche industriali di precisione",
+      "founded": "1998",
+      "foundingLocation": "Veneto, Italia",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "ordini@carpenteriapastro.it",
+        "availableLanguage": ["it", "en"]
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://carpenteriapastro.it/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://carpenteriapastro.it"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Azienda",
+          "item": "https://carpenteriapastro.it/azienda"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lavorazioni",
+          "item": "https://carpenteriapastro.it/lavorazioni"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Settori",
+          "item": "https://carpenteriapastro.it/settori"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Progetti",
+          "item": "https://carpenteriapastro.it/progetti"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Contatti",
+          "item": "https://carpenteriapastro.it/contatti"
+        }
+      ]
+    }
+  ]
+}

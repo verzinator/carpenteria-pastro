@@ -25,12 +25,11 @@ export default function HeroSection() {
         >
           <source src="/immagini-pastro/pastro-video-home.mp4" type="video/mp4" />
         </video>
-        {/* Gradient overlay */}
+        {/* Overlay */}
         <div
           className="absolute inset-0"
           style={{
-            background:
-              'linear-gradient(90deg, var(--color-bg) 0%, rgba(10,11,13,0.6) 55%, rgba(10,11,13,0.05) 100%)',
+            backgroundColor: 'rgba(0,0,0,0.16)',
           }}
         />
         {/* Blueprint grid */}
@@ -51,7 +50,7 @@ export default function HeroSection() {
               letterSpacing: '0.2em',
             }}
           >
-            Carpenteria Industriale dal 1994
+            Carpenteria Industriale dal 1998
           </div>
 
           {/* H1 */}

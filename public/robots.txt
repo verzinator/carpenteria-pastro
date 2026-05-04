@@ -1,0 +1,12 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Specify sitemap
+Sitemap: https://carpenteriapastro.it/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

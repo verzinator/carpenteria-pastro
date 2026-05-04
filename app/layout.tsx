@@ -84,7 +84,7 @@ export default function RootLayout({
                   name: 'Carpenteria Pastro SRL',
                   url: 'https://carpenteriapastro.it',
                   logo: 'https://carpenteriapastro.it/pastro-logo.png',
-                  founded: '1994',
+                  founded: '1998',
                 },
                 {
                   '@type': 'BreadcrumbList',

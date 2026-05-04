@@ -28,7 +28,7 @@ export default function SettoriCTA() {
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-4 pt-4">
           <a
-            href="mailto:info@carpenteriapastro.it"
+            href="mailto:ordini@carpenteriapastro.it"
             className="inline-flex items-center justify-center font-display font-semibold uppercase px-10 transition-all duration-200 hover:opacity-90"
             style={{
               height: '44px',

@@ -141,7 +141,7 @@ export default function ContattiContent() {
                     href={`mailto:${CONTACT_EMAIL}`}
                     style={{ ...infoValueStyle, color: 'var(--color-primary-light)', textDecoration: 'none' }}
                   >
-                    {CONTACT_EMAIL || 'info@carpenteriapastro.it'}
+                    {CONTACT_EMAIL || 'ordini@carpenteriapastro.it'}
                   </a>
                 </div>
                 <div>

@@ -34,7 +34,7 @@ export default function CTASection() {
         </p>
         <div className="flex justify-center pt-4">
           <a
-            href="mailto:info@carpenteriapastro.it"
+            href="mailto:ordini@carpenteriapastro.it"
             className="inline-flex items-center justify-center font-display font-semibold uppercase px-12 transition-all duration-200 hover:opacity-90"
             style={{
               height: '44px',

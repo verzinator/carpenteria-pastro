@@ -2,7 +2,7 @@ export default function IntroSection() {
   const stats = [
     { value: '13 m', label: 'Lunghezza max' },
     { value: '3', label: 'Reparti specializzati' },
-    { value: 'DXF\nDWG / PDF', label: 'Formati nativi', multiline: true },
+    { value: 'DXF\nDWG / STEP', label: 'Formati nativi', multiline: true },
   ]
 
   return (

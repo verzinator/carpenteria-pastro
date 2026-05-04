@@ -9,7 +9,6 @@ const navLinks = [
   { label: 'Azienda', href: '/azienda' },
   { label: 'Lavorazioni', href: '/lavorazioni' },
   { label: 'Settori', href: '/settori' },
-  { label: 'Progetti', href: '/progetti' },
 ]
 
 export default function NavBar() {

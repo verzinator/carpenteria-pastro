@@ -5,9 +5,9 @@ import { Cpu, Ruler, Zap, Puzzle } from 'lucide-react'
 const services = [
   {
     icon: Cpu,
-    title: 'Taglio Laser e Punzonatura',
+    title: 'Taglio Laser',
     description:
-      'Processo di taglio ad alta precisione che utilizza tecnologia laser per dividere lamiere e profili metallici. Consente tagli netti e precisi minimizzando le deformazioni termiche del materiale.',
+      'Processo di taglio ad alta precisione che utilizza tecnologia laser per tagliare e lavorare lamiere. Consente tagli netti e precisi minimizzando le deformazioni termiche del materiale.',
   },
   {
     icon: Ruler,
@@ -19,13 +19,13 @@ const services = [
     icon: Zap,
     title: 'Calandratura',
     description:
-      'Laminazione di lamiere metalliche mediante cilindri per regolare spessore e planarità. Processo essenziale per ottenere superfici uniformi con proprietà meccaniche omogenee.',
+      'Curvatura di lamiere metalliche mediante cilindri per regolare e ottenere la raggiatura desiderata. Consente di rispettare le specifiche tecniche dei progetti di lavorazione.',
   },
   {
     icon: Puzzle,
     title: 'Saldatura',
     description:
-      'Unione di componenti metallici mediante fusione con sorgenti di calore controllato. Crea giunzioni resistenti e durevoli mantenendo l\'integrità strutturale dell\'insieme.',
+      'Saldatura a filo di componenti metallici, eseguita su postazioni attrezzate professionali con sistemi di fissaggio a banco di alta precisione, al fine di garantire elevata qualità delle giunzioni, precisione dimensionale e ripetibilità del processo produttivo.',
   },
 ]
 

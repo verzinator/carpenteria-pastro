@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 const milestones = [
   {
-    year: '1994',
+    year: '1998',
     title: 'Fondazione',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.',
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2ADuAWHtWE90SDZSCrB04s-wq--eMmwKkwgfVOIbaKcapGbi5K_FFOe1ld4eDiBCFsTVngTf_SbOkx9K5zCt_4jiw0QzfQUgPDEi7KDjh1KcU_YQAu276YEcJybaxTdHmVfyDwL06tTWoSXMQh4cYMRz9Nr5U82DKk8veTtlUhJLVdP8LiR6Z369oCLEhDCbK1FCiqXwpOt2XpZfYcQv03vC1YsZ2g6VczJV-wxLLQXf1-z7BkyFq6pRAcnME25mb-DvIgzQ_Ng',
-    alt: 'Officina Pastro fondazione 1994 carpenteria',
+    alt: 'Officina Pastro fondazione 1998 carpenteria',
   },
   {
     year: '2005',

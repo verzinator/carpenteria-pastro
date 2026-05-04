@@ -130,7 +130,7 @@ export async function POST(req: NextRequest) {
             <strong>Carpenteria Pastro S.r.l.</strong><br>
             Via del Lavoro, 8 – 31050 Vedelago (TV)<br>
             Tel: 0423-401219 | Fax: 0423-709147<br>
-            Email: info@carpenteriapastro.it
+            Email: ordini@carpenteriapastro.it
           </p>
         </div>
       `
@@ -167,7 +167,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        message: 'Errore nell\'invio della richiesta. Contattaci direttamente: info@carpenteriapastro.it',
+        message: 'Errore nell\'invio della richiesta. Contattaci direttamente: ordini@carpenteriapastro.it',
       },
       { status: 500 }
     )
