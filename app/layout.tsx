@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'Il partner tecnico per la carpenteria metallica su misura. Taglio laser, piegatura, saldatura e assemblaggio in Veneto.',
   metadataBase: new URL('https://carpenteriapastro.it'),
   icons: {
-    icon: '/immagini-pastro/favicon-pastro.png',
+    icon: '/favicon-pastro.png',
   },
   openGraph: {
     title: 'Carpenteria Pastro — Lavorazioni metalliche di precisione',
