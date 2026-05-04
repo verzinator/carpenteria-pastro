@@ -18,13 +18,13 @@ const timelineData: TimelinePhase[] = [
     phase: 'Le Origini e i Primi Passi',
     items: [
       { year: '1987', title: 'Fondazione', description: 'L\'azienda nasce ad Albaredo di Vedelago grazie alla visione e al solido bagaglio tecnico del fondatore Luigi Pastro, che trae le proprie radici ed esperienza professionale dal settore dei carriponte e degli impianti di sollevamento.' },
-      { year: '1998', title: 'Il primo salto tecnologico', description: 'La capacità produttiva compie un passo in avanti con l\'investimento nella prima pressa piegatrice, una Gasparini PSG da 120 tonnellate, segnando l\'inizio di una specializzazione sempre più precisa nella deformazione della lamiera.' },
+      { year: '1989', title: 'Il primo salto tecnologico', description: 'La capacità produttiva compie un passo in avanti con l\'investimento nella prima pressa piegatrice, una Gasparini PSG da 120 tonnellate, segnando l\'inizio di una specializzazione sempre più precisa nella deformazione della lamiera.' },
     ],
   },
   {
     phase: 'Il Consolidamento e l\'Innovazione',
     items: [
-      { year: '1998', title: 'Espansione strutturale', description: 'L\'azienda inaugura la propria sede operativa in via del Lavoro n. 8 a Vedelago, garantendo spazi più ampi e funzionali per far fronte alla crescente domanda.' },
+      { year: '1989', title: 'Espansione strutturale', description: 'L\'azienda inaugura la propria sede operativa in via del Lavoro n. 8 a Vedelago, garantendo spazi più ampi e funzionali per far fronte alla crescente domanda.' },
       { year: '2000', title: 'Il cambio generazionale e la digitalizzazione', description: 'Entra in azienda Manuel Pastro, figlio del fondatore. Il suo ingresso imprime una svolta decisiva: porta in officina nuove visioni e spinge con forza sull\'innovazione tecnologica. In questo stesso anno, l\'acquisto del primo impianto di taglio plasma (CR 4000x1500) segna l\'avvio della transizione verso processi automatizzati.' },
     ],
   },

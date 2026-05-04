@@ -50,7 +50,7 @@ export default function HeroSection() {
               letterSpacing: '0.2em',
             }}
           >
-            Carpenteria Industriale dal 1998
+            Carpenteria Industriale dal 1989
           </div>
 
           {/* H1 */}
