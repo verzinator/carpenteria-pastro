@@ -55,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="it" className={`${hostGrotesk.variable} ${inter.variable}`}>
       <head>
+        <link rel="icon" href="/favicon-pastro.png" type="image/png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

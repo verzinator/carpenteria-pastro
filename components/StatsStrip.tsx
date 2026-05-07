@@ -2,7 +2,7 @@ const stats = [
   { value: '30+', label: 'Anni di Esperienza' },
   { value: '13m', label: 'Capacità di Piegatura' },
   { value: '12m', label: 'Capacità di Taglio Laser' },
-  { value: '600t', label: 'Capacità Presso Piegatrice' },
+  { value: '750t', label: 'Capacità Presso Piegatrice' },
 ]
 
 export default function StatsStrip() {
