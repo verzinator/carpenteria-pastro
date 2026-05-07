@@ -32,7 +32,7 @@ const servizi = [
     title: 'Calandratura',
     body: 'Calandratura a 4 rulli fino a 2 metri di larghezza. Lavorazione per curve e bombature su componenti di grande formato con omogeneità di forma e finitura superficiale controllata.',
     specs: 'Calandratura: 4 rulli, Larghezza max: 2 m, Materiali: Acciaio al carbonio, Inox, Alluminio',
-    img: '/immagini-pastro/Pastro_pannelli grandi dimensioni.png',
+    img: '/immagini-pastro/Calandratura.jpg',
     alt: 'Calandratura Pastro carpenteria acciaio',
     reverse: false,
     highlight: false,
