@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundColor: 'rgba(0,0,0,0.50)',
+            backgroundColor: 'rgba(0,0,0,0.35)',
           }}
         />
         {/* Blueprint grid */}
