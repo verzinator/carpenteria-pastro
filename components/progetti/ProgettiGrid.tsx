@@ -16,16 +16,15 @@ interface Project {
 }
 
 async function getProjects() {
-  const query = `
-    *[_type == "progetti"] | order(_createdAt desc) {
-      _id,
-      title,
-      slug,
-      mainImage,
-      description
-    }
-  `
-  return sanityFetch({ query, tags: ['projects'] })
+  const query = `*[_type == "progetti"] | order(_createdAt desc) { _id, title, slug, mainImage, description }`
+  try {
+    const data = await sanityFetch({ query, tags: ['projects'] })
+    console.log('[ProgettiGrid] Query result:', JSON.stringify(data, null, 2))
+    return data || []
+  } catch (error) {
+    console.error('[ProgettiGrid] Query error:', error)
+    return []
+  }
 }
 
 export default async function ProgettiGrid() {
