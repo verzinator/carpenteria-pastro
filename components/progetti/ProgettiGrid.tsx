@@ -17,7 +17,7 @@ interface Project {
 
 async function getProjects() {
   const query = `
-    *[_type == "project"] | order(_createdAt desc) {
+    *[_type == "progetti"] | order(_createdAt desc) {
       _id,
       title,
       slug,
