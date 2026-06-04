@@ -16,15 +16,8 @@ interface Project {
 }
 
 async function getProjects() {
-  const query = `*[_type == "progetti"] | order(_createdAt desc) { _id, title, slug, mainImage, description }`
-  try {
-    const data = await sanityFetch({ query, tags: ['projects'] })
-    console.log('[ProgettiGrid] Query result:', JSON.stringify(data, null, 2))
-    return data || []
-  } catch (error) {
-    console.error('[ProgettiGrid] Query error:', error)
-    return []
-  }
+  const query = `*[_type == "progetto"] | order(_createdAt desc) { _id, title, slug, mainImage, description }`
+  return sanityFetch({ query, tags: ['projects'] })
 }
 
 export default async function ProgettiGrid() {
@@ -39,7 +32,9 @@ export default async function ProgettiGrid() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           }}
         >
-          {projects.map((project) => (
+          {projects.map((project) => {
+            if (!project.mainImage) return null
+            return (
             <a
               key={project._id}
               href={`/progetti/${project.slug.current}`}
@@ -77,7 +72,8 @@ export default async function ProgettiGrid() {
                 </p>
               )}
             </a>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
