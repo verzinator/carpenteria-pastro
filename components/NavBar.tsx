@@ -30,7 +30,7 @@ export default function NavBar() {
         {/* Logo */}
         <a href="/" className="hover:opacity-80 transition-opacity flex-shrink-0">
           <Image
-            src="/pastro-logo.png"
+            src="/immagini-pastro/pastro logo-bianco.png"
             alt="Carpenteria Pastro"
             width={180}
             height={50}
