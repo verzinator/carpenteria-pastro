@@ -9,8 +9,8 @@ const navLinks = [
   { label: 'Azienda', href: '/azienda' },
   { label: 'Lavorazioni', href: '/lavorazioni' },
   { label: 'Settori', href: '/settori' },
-  { label: 'Progetti', href: '/progetti' },
-]
+  { label: 'Progetti', href: '/progetti', hidden: true },
+] as { label: string; href: string; hidden?: boolean }[]
 
 export default function NavBar() {
   const [open, setOpen] = useState(false)
@@ -55,6 +55,10 @@ export default function NavBar() {
                   color: isActive ? 'var(--color-text)' : 'var(--color-text-muted)',
                   border: isActive ? '1px solid var(--color-border-highlight)' : '1px solid transparent',
                   borderRadius: 'var(--radius-sm)',
+                  visibility: link.hidden ? 'hidden' : 'visible',
+                  width: link.hidden ? 0 : undefined,
+                  padding: link.hidden ? 0 : undefined,
+                  overflow: 'hidden',
                 }}
                 onMouseEnter={(e) => {
                   if (!isActive) (e.target as HTMLElement).style.color = 'var(--color-text)'
@@ -110,6 +114,7 @@ export default function NavBar() {
                   color: isActive ? 'var(--color-text)' : 'var(--color-text-muted)',
                   borderLeft: isActive ? '2px solid var(--color-primary-light)' : '2px solid transparent',
                   paddingLeft: isActive ? '12px' : '0',
+                  display: link.hidden ? 'none' : undefined,
                 }}
               >
                 {link.label}
