@@ -55,6 +55,17 @@ export default function MaterialiSection() {
           >
             Materiali a magazzino
           </h2>
+          <p
+            className="font-body leading-relaxed mt-4"
+            style={{
+              fontSize: 'clamp(15px, 1vw, 17px)',
+              color: 'var(--color-text-muted)',
+              fontWeight: 300,
+              maxWidth: '65ch',
+            }}
+          >
+            4 magazzini automatici verticali per lamiere, tubolari e semilavorati per snellire e velocizzare al massimo i processi produttivi e garantire risposte rapide alle esigenze dei clienti. Capacità complessiva di stoccaggio: 5.000 quintali.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

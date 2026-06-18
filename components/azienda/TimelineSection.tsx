@@ -34,14 +34,14 @@ const timelineData: TimelinePhase[] = [
       { year: '2004', title: 'Incremento della capacità', description: 'Si realizza un importante ampliamento della sede produttiva e un significativo potenziamento del parco macchine, consolidando la posizione dell\'azienda sul mercato.' },
       { year: '2010', title: 'L\'impegno verso il Green', description: 'La lungimiranza della dirigenza si riflette nell\'attenzione all\'ambiente con l\'installazione del primo impianto fotovoltaico, integrando la sostenibilità nel ciclo produttivo.' },
       { year: '2011', title: 'L\'era del Laser', description: 'La tecnologia di taglio compie un salto di qualità con l\'acquisto del primo impianto di taglio laser per lamiera, garantendo standard di precisione e flessibilità superiori.' },
-      { year: '2013', title: 'Raggiungimento della maturità', description: 'La sede produttiva viene ulteriormente ampliata, raggiungendo una superficie complessiva di 3.300 mq, ottimizzando i flussi di lavoro e lo stoccaggio.' },
+      { year: '2013', title: 'Raggiungimento della maturità', description: 'La sede produttiva viene ulteriormente ampliata, raggiungendo una superficie complessiva di 3.300 mq con una capacità di stoccaggio lamiere di 5.000 quintali, ottimizzando i flussi di lavoro e la logistica interna.' },
     ],
   },
   {
     phase: 'L\'Eccellenza Tecnologica Contemporanea',
     items: [
       { year: '2016', title: 'Grande formato', description: 'Viene acquistato un performante impianto di taglio laser da 12.000x2.500 mm, permettendo alla carpenteria di gestire lavorazioni su dimensioni fuori standard.' },
-      { year: '2017', title: 'Potenziamento della piegatura', description: 'Prosegue l\'aggiornamento tecnologico con l\'ingresso di una pressa da 600 tonnellate, capace di affrontare spessori e geometrie complesse.' },
+      { year: '2017', title: 'Potenziamento della piegatura', description: 'Prosegue l\'aggiornamento tecnologico con l\'ingresso di una pressa da 750 tonnellate su 7 metri, capace di affrontare spessori e geometrie complesse.' },
       { year: '2018', title: 'Rinnovo funzionale', description: 'Completata la realizzazione dei nuovi uffici, pensati per accogliere al meglio il personale amministrativo e tecnico in un ambiente moderno.' },
       { year: '2019', title: 'Efficienza energetica raddoppiata', description: 'Viene installato il secondo impianto fotovoltaico, confermando l\'impegno costante dell\'azienda verso l\'autosufficienza energetica e la riduzione dell\'impronta carbonica.' },
     ],
