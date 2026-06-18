@@ -57,6 +57,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon-pastro.png" type="image/png" />
         <script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="f3f06931-4fa0-4360-9d77-4e25655b982b"
+          data-blockingmode="auto"
+          type="text/javascript"
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({

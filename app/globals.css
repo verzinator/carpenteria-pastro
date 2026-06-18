@@ -34,16 +34,199 @@
   }
 }
 
-/* Scroll fade-in */
-section {
+/* Scroll fade-in — exclude nested sections (e.g. iubenda embed) */
+section:not(.iubenda-embed-content section) {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
-section.in-view {
+section:not(.iubenda-embed-content section).in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+.iubenda-embed-content section {
+  opacity: 1;
+  transform: none;
+}
+
+/* iubenda embed dark theme overrides */
+.iubenda-embed-content {
+  color: var(--color-accent-silver);
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.iubenda-embed-content h1,
+.iubenda-embed-content h2,
+.iubenda-embed-content h3,
+.iubenda-embed-content h4 {
+  color: var(--color-text);
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+.iubenda-embed-content h1 { font-size: 20px; }
+.iubenda-embed-content h2 { font-size: 16px; }
+.iubenda-embed-content h3 { font-size: 15px; }
+
+.iubenda-embed-content p {
+  margin-bottom: var(--space-4);
+}
+
+.iubenda-embed-content a {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+.iubenda-embed-content ul,
+.iubenda-embed-content ol {
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.iubenda-embed-content li {
+  margin-bottom: var(--space-2);
+}
+
+.iubenda-embed-content .iub_header,
+.iubenda-embed-content .iub_footer,
+.iubenda-embed-content header,
+.iubenda-embed-content footer {
+  border-color: var(--color-border);
+}
+
+.iubenda-embed-content .box_primary,
+.iubenda-embed-content .box_10 {
+  background: transparent;
+  border-color: var(--color-border);
+}
+
+/* Cookiebot banner overrides */
+#CybotCookiebotDialog {
+  position: fixed !important;
+  bottom: 0 !important;
+  top: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+  background: #111318 !important;
+  border: 1px solid #252830 !important;
+  border-bottom: none !important;
+  border-radius: 12px 12px 0 0 !important;
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.6) !important;
+  font-family: var(--font-body), sans-serif !important;
+  color: #e2e6ed !important;
+  max-width: 100% !important;
+  padding: 24px 32px !important;
+}
+
+#CybotCookiebotDialogBodyContentTitle {
+  color: #e2e6ed !important;
+  font-family: var(--font-display), sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
+
+#CybotCookiebotDialogBodyContentText,
+#CybotCookiebotDialogBodyContentText a {
+  color: #8892a4 !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+#CybotCookiebotDialogBodyContentText a {
+  color: #4d8fd4 !important;
+  text-decoration: underline !important;
+}
+
+/* All buttons base style */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection,
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonDecline,
+.CybotCookiebotDialogBodyButton {
+  font-family: var(--font-body), sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border-radius: 4px !important;
+  padding: 12px 24px !important;
+  border: 1px solid transparent !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Accept / Allow all — primary button */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyButtonAccept,
+#CybotCookiebotDialogBodyLevelButtonAccept {
+  background-color: #1b4f8a !important;
+  color: #e2e6ed !important;
+  border-color: #1b4f8a !important;
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
+#CybotCookiebotDialogBodyButtonAccept:hover,
+#CybotCookiebotDialogBodyLevelButtonAccept:hover {
+  background-color: #2563b0 !important;
+  border-color: #2563b0 !important;
+}
+
+/* Decline / Reject — ghost button */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll,
+#CybotCookiebotDialogBodyButtonDecline,
+#CybotCookiebotDialogBodyLevelButtonDecline {
+  background-color: transparent !important;
+  color: #8892a4 !important;
+  border-color: #252830 !important;
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:hover,
+#CybotCookiebotDialogBodyButtonDecline:hover,
+#CybotCookiebotDialogBodyLevelButtonDecline:hover {
+  border-color: #2a4a7a !important;
+  color: #e2e6ed !important;
+}
+
+/* Selection / Customize — secondary button */
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+  background-color: #181b22 !important;
+  color: #c0c8d8 !important;
+  border-color: #252830 !important;
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
+  border-color: #2a4a7a !important;
+  color: #e2e6ed !important;
+}
+
+/* Tabs and checkboxes */
+#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink {
+  color: #8892a4 !important;
+}
+
+#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink.CybotCookiebotDialogActive {
+  color: #e2e6ed !important;
+  border-bottom-color: #1b4f8a !important;
+}
+
+#CybotCookiebotDialogDetail {
+  background: #111318 !important;
+  border-color: #252830 !important;
+}
+
+/* Powered by / branding */
+#CybotCookiebotDialogPoweredByLink {
+  color: #3d4250 !important;
 }
 
 @layer utilities {
